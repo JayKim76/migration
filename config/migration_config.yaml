@@ -1,0 +1,56 @@
+# Oracle Migration Configuration
+
+source:
+  server_host: "192.168.1.100"  # Linux OS Host
+  ssh_user: "oracle"            # SSH Username
+  host: "192.168.1.100"         # Oracle Listener Host
+  port: 1521
+  service_name: "ORCL"
+  username: "system"
+  password: ""            # 빈 문자열이면 실행 시 프롬프트 입력
+  oracle_home: ""         # 비워두면 환경변수 ORACLE_HOME 사용
+
+target:
+  server_host: "192.168.1.200"
+  ssh_user: "oracle"
+  host: "192.168.1.200"
+  port: 1521
+  service_name: "ORCL"
+  username: "system"
+  password: ""
+  oracle_home: ""
+
+export:
+  method: "expdp"         # "exp" 또는 "expdp"
+  schemas:
+    - "HR"
+    - "SCOTT"
+  directory: "DATA_PUMP_DIR"        # expdp용 Oracle DIRECTORY 객체명
+  directory_path: "/tmp/datapump"   # 실제 서버 경로 (DIRECTORY 객체 생성 시 사용)
+  dumpfile: "migration_%U.dmp"
+  logfile: "export.log"
+  parallel: 4
+  compression: "ALL"      # expdp 전용: NONE, METADATA_ONLY, DATA_ONLY, ALL
+  consistent: true        # exp 전용
+
+import:
+  method: "impdp"         # "imp" 또는 "impdp"
+  directory: "DATA_PUMP_DIR"
+  dumpfile: "migration_%U.dmp"
+  logfile: "import.log"
+  parallel: 4
+  table_exists_action: "REPLACE"    # SKIP, APPEND, TRUNCATE, REPLACE
+  remap_tablespace: {}              # 예: {USERS: NEW_USERS, DATA: NEW_DATA}
+  remap_schema: {}                  # 예: {HR: NEW_HR}
+
+comparison:
+  exclude_tables: []                # 비교에서 제외할 테이블
+  row_count_sample: 100            # 행 수 비교 시 최대 테이블 수 (0=전체)
+  output_format: "both"            # "markdown", "html", "both"
+
+output:
+  base_dir: "output"
+  ddl_dir: "output/ddl"
+  dump_dir: "output/dumps"
+  report_dir: "output/reports"
+  log_dir: "output/logs"

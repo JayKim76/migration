@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Migration Orchestrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="dashboard">
+        <aside>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>MIGRATION PRO</span>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="nav-item active" onclick="showStep(1)" data-step="1">
+                            <span class="step-num">01</span>
+                            <span>Connectivity</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" onclick="showStep(2)" data-step="2">
+                            <span class="step-num">02</span>
+                            <span>DDL Extraction</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" onclick="showStep(3)" data-step="3">
+                            <span class="step-num">03</span>
+                            <span>Data Export</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" onclick="showStep(4)" data-step="4">
+                            <span class="step-num">04</span>
+                            <span>Target Setup</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" onclick="showStep(5)" data-step="5">
+                            <span class="step-num">05</span>
+                            <span>Data Ingestion</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" onclick="showStep(6)" data-step="6">
+                            <span class="step-num">06</span>
+                            <span>Validation</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="container">
+                <header>
+                    <h1 id="step-title">Database Connectivity</h1>
+                    <p class="subtitle" id="step-subtitle">Source and Target environment link verification.</p>
+                </header>
+
+                <!-- Step 1: Connectivity -->
+                <section id="step-1" class="step-content active">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="badge">Connection Monitor</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/nodes.png" alt="Database Nodes">
+                        </div>
+                        <div class="input-grid">
+                            <!-- Source Configuration -->
+                            <div class="conn-section">
+                                <h3 style="margin-bottom: 0.5rem;">Source Environment</h3>
+                                <div class="conn-group">
+                                    <h4>Linux Server Info</h4>
+                                    <div class="input-group">
+                                        <label>IP Address / Host</label>
+                                        <input type="text" value="192.168.1.100" placeholder="10.0.0.1">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>SSH Username</label>
+                                        <input type="text" value="oracle" placeholder="oracle">
+                                    </div>
+                                </div>
+                                <div class="conn-group">
+                                    <h4>Oracle Database Info</h4>
+                                    <div class="input-group">
+                                        <label>SID / Service Name</label>
+                                        <input type="text" value="ORCL" placeholder="ORCL">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>DB Port</label>
+                                        <input type="text" value="1521" placeholder="1521">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Schema User</label>
+                                        <input type="text" value="system" placeholder="system">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Target Configuration -->
+                            <div class="conn-section">
+                                <h3 style="margin-bottom: 0.5rem;">Target Environment</h3>
+                                <div class="conn-group">
+                                    <h4>Linux Server Info</h4>
+                                    <div class="input-group">
+                                        <label>IP Address / Host</label>
+                                        <input type="text" value="192.168.1.200" placeholder="10.0.0.2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>SSH Username</label>
+                                        <input type="text" value="oracle" placeholder="oracle">
+                                    </div>
+                                </div>
+                                <div class="conn-group">
+                                    <h4>Oracle Database Info</h4>
+                                    <div class="input-group">
+                                        <label>SID / Service Name</label>
+                                        <input type="text" value="ORCL_TGT" placeholder="ORCL">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>DB Port</label>
+                                        <input type="text" value="1521" placeholder="1521">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Schema User</label>
+                                        <input type="text" value="system" placeholder="system">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" onclick="runStep1()">Test Connection & Proceed</button>
+                            <button class="btn btn-secondary">Edit Config</button>
+                        </div>
+                        <div id="step-1-terminal" class="terminal" style="margin-top: 1rem;">
+                            [READY] Waiting for connection test...
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 2: DDL Extraction -->
+                <section id="step-2" class="step-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="badge">Metadata Engine</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/hero.png" alt="Migration Hero">
+                        </div>
+                        <p>Extracting tablespace, user roles, and schema DDL from source.</p>
+                        <div id="step-2-terminal" class="terminal">
+                            [READY] Waiting for extraction command...
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" onclick="runStep2()">Run Extraction</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 3: Export -->
+                <section id="step-3" class="step-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="badge">Data Pump Export</div>
+                        </div>
+                        <h3>Exporting Dump Files</h3>
+                        <p>Method: EXPDP (Parallel: 4)</p>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div id="export-progress" class="progress-fill" style="width: 45%;"></div>
+                            </div>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Exporting HR schema... 45% complete</p>
+                        </div>
+                        <div id="step-3-terminal" class="terminal">
+                            [READY] Waiting for export command...
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" onclick="runStep3()">Start Export</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 4: Target Setup -->
+                <section id="step-4" class="step-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="badge">Environment Prep</div>
+                        </div>
+                        <h3>Initializing Target Environment</h3>
+                        <div id="step-4-terminal" class="terminal">
+                            [READY] Waiting for setup command...
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" onclick="runStep4()">Run Target Setup</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 5: Import -->
+                <section id="step-5" class="step-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="badge">Data Pump Import</div>
+                        </div>
+                        <h3>Importing Data to Target</h3>
+                        <div id="step-5-terminal" class="terminal">
+                            [READY] Waiting for import command...
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" onclick="runStep5()">Start Import</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 6: Validation -->
+                <section id="step-6" class="step-content">
+                    <div class="card success-card">
+                        <div class="image-wrapper" style="height: 400px;">
+                            <img src="assets/success.png" alt="Success">
+                        </div>
+                        <h2>Migration Successful</h2>
+                        <p style="margin-bottom: 2rem;">Source and Target schemas are synchronized.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                            <div class="card" style="padding: 1rem; margin-bottom: 0;">
+                                <h4 style="color: var(--accent-cyan);">Table Count</h4>
+                                <p style="font-size: 1.5rem; font-weight: 800;">142</p>
+                            </div>
+                            <div class="card" style="padding: 1rem; margin-bottom: 0;">
+                                <h4 style="color: var(--accent-cyan);">Row Count</h4>
+                                <p style="font-size: 1.5rem; font-weight: 800;">1.2M</p>
+                            </div>
+                            <div class="card" style="padding: 1rem; margin-bottom: 0;">
+                                <h4 style="color: var(--accent-cyan);">Status</h4>
+                                <p style="font-size: 1.5rem; font-weight: 800; color: var(--accent-green);">PASS</p>
+                            </div>
+                        </div>
+                        <div id="step-6-terminal" class="terminal">
+                            [READY] Finalizing report...
+                        </div>
+                        <div class="button-group" style="justify-content: center;">
+                            <button class="btn" onclick="runStep6()">Generate Final Report</button>
+                            <button class="btn btn-secondary" onclick="showStep(1)">Start New Migration</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

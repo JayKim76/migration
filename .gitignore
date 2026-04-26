@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Project Specific
+output/
+*.log
+*.dmp
+*.par
+
+# IDEs
+.vscode/
+.idea/
+
+# Flask
+instance/
+.webassets-cache
