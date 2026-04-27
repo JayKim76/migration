@@ -20,7 +20,8 @@ def run_command(command):
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            encoding='utf-8'
+            encoding='cp949',
+            errors='replace'
         )
         output, _ = process.communicate()
         return output, process.returncode
@@ -53,7 +54,36 @@ def api_extract():
 
 @app.route('/api/export', methods=['POST'])
 def api_export():
+    data = request.json or {}
     command = "python main.py export"
+    
+    if data.get("method"):
+        command += f" --method {data['method']}"
+    if data.get("mode"):
+        command += f" --mode {data['mode']}"
+    if data.get("targets"):
+        command += f' --targets "{data["targets"]}"'
+    if data.get("directory"):
+        command += f' --directory "{data["directory"]}"'
+    if data.get("dumpfile"):
+        command += f' --dumpfile "{data["dumpfile"]}"'
+    if data.get("logfile"):
+        command += f' --logfile "{data["logfile"]}"'
+    if data.get("parallel"):
+        command += f" --parallel {data['parallel']}"
+    if data.get("compression"):
+        command += f" --compression {data['compression']}"
+    if data.get("schemas"): # fallback
+        command += f' --schemas "{data["schemas"]}"'
+    if "consistent" in data:
+        command += " --consistent" if data["consistent"] else " --no-consistent"
+    if data.get("content"):
+        command += f" --content {data['content']}"
+    if data.get("exclude"):
+        command += f' --exclude "{data["exclude"]}"'
+    if data.get("estimate_only"):
+        command += " --estimate-only"
+        
     output, code = run_command(command)
     return jsonify({"output": output, "status": "success" if code == 0 else "error"})
 

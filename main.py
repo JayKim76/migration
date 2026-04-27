@@ -92,12 +92,37 @@ def cmd_extract_ddl(config, thick):
 @CONFIG_OPT
 @THICK_OPT
 @click.option("--method", type=click.Choice(["exp", "expdp"]), default=None, help="exp 또는 expdp (설정 파일 우선)")
-def cmd_export(config, thick, method):
+@click.option("--mode", type=click.Choice(["full", "schema", "table", "tablespace"]), default=None, help="Export 모드")
+@click.option("--targets", default=None, help="선택한 모드에 따른 대상 (콤마 구분)")
+@click.option("--directory", default=None, help="Oracle DIRECTORY 객체명")
+@click.option("--dumpfile", default=None, help="덤프 파일명")
+@click.option("--logfile", default=None, help="로그 파일명")
+@click.option("--parallel", type=int, default=None, help="expdp 병렬도")
+@click.option("--compression", type=click.Choice(["ALL", "METADATA_ONLY", "DATA_ONLY", "NONE"]), default=None, help="expdp 압축 옵션")
+@click.option("--schemas", default=None, help="하위 호환용 스키마 목록")
+@click.option("--consistent/--no-consistent", default=None, help="exp consistent 옵션")
+@click.option("--content", type=click.Choice(["ALL", "DATA_ONLY", "METADATA_ONLY"]), default=None, help="Export 내용")
+@click.option("--exclude", default=None, help="제외할 객체 (예: STATISTICS)")
+@click.option("--estimate-only", is_flag=True, default=False, help="실제 추출 없이 예상 크기만 확인")
+def cmd_export(config, thick, method, mode, targets, directory, dumpfile, logfile, parallel, compression, schemas, consistent, content, exclude, estimate_only):
     """Step 3: Source DB Export (exp/expdp)."""
     cfg = load_config(config)
     ensure_dirs(cfg)
-    if method:
-        cfg["export"]["method"] = method
+    
+    exp_cfg = cfg.setdefault("export", {})
+    if method: exp_cfg["method"] = method
+    if mode: exp_cfg["mode"] = mode
+    if targets: exp_cfg["targets"] = [t.strip() for t in targets.split(",") if t.strip()]
+    if directory: exp_cfg["directory"] = directory
+    if dumpfile: exp_cfg["dumpfile"] = dumpfile
+    if logfile: exp_cfg["logfile"] = logfile
+    if parallel is not None: exp_cfg["parallel"] = parallel
+    if compression: exp_cfg["compression"] = compression
+    if schemas: exp_cfg["schemas"] = [s.strip() for s in schemas.split(",") if s.strip()]
+    if consistent is not None: exp_cfg["consistent"] = consistent
+    if content: exp_cfg["content"] = content
+    if exclude: exp_cfg["exclude"] = exclude
+    if estimate_only: exp_cfg["estimate_only"] = True
 
     password = get_password(cfg["source"], "SOURCE")
     src_conn = OracleConnection(cfg["source"], label="SOURCE", thick_mode=thick)

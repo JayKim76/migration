@@ -106,6 +106,9 @@
                                         <input type="text" value="system" placeholder="system">
                                     </div>
                                 </div>
+                                <div class="button-group" style="margin-top: 1rem;">
+                                    <button class="btn" id="btn-test-source" onclick="testConnection('source')">Test Connection & Proceed</button>
+                                </div>
                             </div>
 
                             <!-- Target Configuration -->
@@ -137,11 +140,10 @@
                                         <input type="text" value="system" placeholder="system">
                                     </div>
                                 </div>
+                                <div class="button-group" style="margin-top: 1rem;">
+                                    <button class="btn" id="btn-test-target" onclick="testConnection('target')">Test Connection & Proceed</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button-group">
-                            <button class="btn" onclick="runStep1()">Test Connection & Proceed</button>
-                            <button class="btn btn-secondary">Edit Config</button>
                         </div>
                         <div id="step-1-terminal" class="terminal" style="margin-top: 1rem;">
                             [READY] Waiting for connection test...
@@ -172,15 +174,107 @@
                 <section id="step-3" class="step-content">
                     <div class="card">
                         <div class="card-header">
-                            <div class="badge">Data Pump Export</div>
+                            <div class="badge">Export Configuration</div>
                         </div>
-                        <h3>Exporting Dump Files</h3>
-                        <p>Method: EXPDP (Parallel: 4)</p>
-                        <div class="progress-container">
-                            <div class="progress-bar">
-                                <div id="export-progress" class="progress-fill" style="width: 45%;"></div>
+                        
+                        <div class="method-selector" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="radio" name="exportMethod" value="expdp" checked onchange="toggleExportOptions()">
+                                <span style="font-weight: 600;">EXPDP (Data Pump)</span>
+                            </label>
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="radio" name="exportMethod" value="exp" onchange="toggleExportOptions()">
+                                <span style="font-weight: 600;">EXP (Traditional)</span>
+                            </label>
+                        </div>
+
+                        <div class="input-grid" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                            <!-- General Settings -->
+                            <div class="input-group">
+                                <label>Export Mode</label>
+                                <select id="exp-mode" onchange="toggleExportMode()" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                    <option value="schema">Schemas</option>
+                                    <option value="full">Full Database</option>
+                                    <option value="table">Tables</option>
+                                    <option value="tablespace">Tablespaces</option>
+                                </select>
                             </div>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">Exporting HR schema... 45% complete</p>
+                            <div class="input-group" id="target-objects-group">
+                                <label id="exp-targets-label">Target Schemas</label>
+                                <input type="text" id="exp-targets" placeholder="e.g. HR, SCOTT" value="HR, SCOTT">
+                            </div>
+
+                            <!-- File Settings -->
+                            <div class="conn-group" style="grid-column: span 2;">
+                                <h4>File Configuration</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Directory Object</label>
+                                        <input type="text" id="exp-directory" value="DATA_PUMP_DIR">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Dumpfile Name</label>
+                                        <input type="text" id="exp-dumpfile" value="migration_%U.dmp">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Logfile Name</label>
+                                        <input type="text" id="exp-logfile" value="export.log">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EXPDP Specific Options -->
+                            <div class="conn-group expdp-option" style="grid-column: span 2;">
+                                <h4>Data Pump Advanced Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Parallel Degree</label>
+                                        <input type="number" id="exp-parallel" value="4" min="1" max="16">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Compression</label>
+                                        <select id="exp-compression" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="ALL">ALL</option>
+                                            <option value="METADATA_ONLY">METADATA_ONLY</option>
+                                            <option value="DATA_ONLY">DATA_ONLY</option>
+                                            <option value="NONE">NONE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Content</label>
+                                        <select id="exp-content" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">ALL (Default)</option>
+                                            <option value="DATA_ONLY">DATA_ONLY</option>
+                                            <option value="METADATA_ONLY">METADATA_ONLY</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Exclude</label>
+                                        <input type="text" id="exp-exclude" placeholder="e.g. STATISTICS, INDEX">
+                                    </div>
+                                    <div class="input-group" style="grid-column: span 2;">
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; margin-top: 10px;">
+                                            <input type="checkbox" id="exp-estimate" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Estimate Only (Do not export data)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EXP Specific Options -->
+                            <div class="input-group exp-option" style="display: none; grid-column: span 2;">
+                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                    <input type="checkbox" id="exp-consistent" checked style="width: 18px; height: 18px;">
+                                    <span style="color: white; font-weight: 600;">Consistent Export (CONSISTENT=Y)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="progress-container" style="display: none;" id="export-progress-container">
+                            <div class="progress-bar">
+                                <div id="export-progress" class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;" id="export-progress-text">Preparing export...</p>
                         </div>
                         <div id="step-3-terminal" class="terminal">
                             [READY] Waiting for export command...

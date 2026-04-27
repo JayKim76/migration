@@ -41,21 +41,43 @@ def build_expdp_parfile(cfg: dict, password: str) -> tuple[str, str]:
     src_cfg = cfg.get("source", {})
     dump_dir = cfg.get("output", {}).get("dump_dir", "output/dumps")
 
-    schemas = ",".join(exp_cfg.get("schemas", []))
+    mode = exp_cfg.get("mode", "schema").lower()
+    # 하위 호환성을 위해 schemas도 확인
+    targets = ",".join(exp_cfg.get("targets", exp_cfg.get("schemas", [])))
+    
     directory = exp_cfg.get("directory", "DATA_PUMP_DIR")
     dumpfile = exp_cfg.get("dumpfile", "migration_%U.dmp")
     logfile = exp_cfg.get("logfile", "export.log")
     parallel = exp_cfg.get("parallel", 4)
     compression = exp_cfg.get("compression", "ALL")
+    content_opt = exp_cfg.get("content")
+    exclude = exp_cfg.get("exclude")
+    estimate_only = exp_cfg.get("estimate_only", False)
 
-    lines = [
-        f"SCHEMAS={schemas}",
+    lines = []
+    if mode == "full":
+        lines.append("FULL=Y")
+    elif mode == "schema":
+        lines.append(f"SCHEMAS={targets}")
+    elif mode == "table":
+        lines.append(f"TABLES={targets}")
+    elif mode == "tablespace":
+        lines.append(f"TABLESPACES={targets}")
+
+    lines.extend([
         f"DIRECTORY={directory}",
         f"DUMPFILE={dumpfile}",
         f"LOGFILE={logfile}",
         f"PARALLEL={parallel}",
         f"COMPRESSION={compression}",
-    ]
+    ])
+
+    if content_opt:
+        lines.append(f"CONTENT={content_opt}")
+    if exclude:
+        lines.append(f"EXCLUDE={exclude}")
+    if estimate_only:
+        lines.append("ESTIMATE_ONLY=Y")
 
     content = "\n".join(lines)
     ts = timestamp_str()
