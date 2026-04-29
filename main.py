@@ -57,11 +57,30 @@ def cli():
 @CONFIG_OPT
 @THICK_OPT
 @click.option("--type", "db_type", type=click.Choice(["source", "target"]), default="source", show_default=True)
-def cmd_connect(config, thick, db_type):
+@click.option("--server-host", help="Server OS Host")
+@click.option("--ssh-user", help="SSH Username")
+@click.option("--ssh-password", help="SSH Password")
+@click.option("--host", help="DB Host")
+@click.option("--port", type=int, help="DB Port")
+@click.option("--service-name", help="Service Name / SID")
+@click.option("--username", help="DB Username")
+@click.option("--password", help="DB Password")
+def cmd_connect(config, thick, db_type, server_host, ssh_user, ssh_password, host, port, service_name, username, password):
     """Step 1: DB 접속 테스트."""
     cfg = load_config(config)
     ensure_dirs(cfg)
     section = cfg[db_type]
+    
+    # Override from CLI
+    if server_host: section["server_host"] = server_host
+    if ssh_user: section["ssh_user"] = ssh_user
+    if ssh_password: section["ssh_password"] = ssh_password
+    if host: section["host"] = host
+    if port: section["port"] = port
+    if service_name: section["service_name"] = service_name
+    if username: section["username"] = username
+    if password: section["password"] = password
+
     conn = OracleConnection(section, label=db_type.upper(), thick_mode=thick)
     ok = conn.test_connection()
     conn.close()
@@ -73,9 +92,13 @@ def cmd_connect(config, thick, db_type):
 @cli.command("extract-ddl")
 @CONFIG_OPT
 @THICK_OPT
-def cmd_extract_ddl(config, thick):
+@click.option("--ddl-dir", help="DDL 파일 저장 디렉토리")
+def cmd_extract_ddl(config, thick, ddl_dir):
     """Step 2: Source DB 메타정보 조회 및 DDL 추출."""
     cfg = load_config(config)
+    if ddl_dir:
+        cfg.setdefault("output", {})["ddl_dir"] = ddl_dir
+        
     ensure_dirs(cfg)
     src_conn = OracleConnection(cfg["source"], label="SOURCE", thick_mode=thick)
     src_conn.connect()
@@ -101,10 +124,52 @@ def cmd_extract_ddl(config, thick):
 @click.option("--compression", type=click.Choice(["ALL", "METADATA_ONLY", "DATA_ONLY", "NONE"]), default=None, help="expdp 압축 옵션")
 @click.option("--schemas", default=None, help="하위 호환용 스키마 목록")
 @click.option("--consistent/--no-consistent", default=None, help="exp consistent 옵션")
+# ── exp-only options ──────────────────────────────────────────────────────────
+@click.option("--grants/--no-grants", default=None, help="exp: 권한 익스포트 (Y)")
+@click.option("--indexes/--no-indexes", default=None, help="exp: 인덱스 익스포트 (Y)")
+@click.option("--rows/--no-rows", default=None, help="exp: 데이터 행 익스포트 (Y)")
+@click.option("--constraints/--no-constraints", default=None, help="exp: 제약조건 익스포트 (Y)")
+@click.option("--triggers/--no-triggers", default=None, help="exp: 트리거 익스포트 (Y)")
+@click.option("--direct/--no-direct", default=None, help="exp: Direct Path 사용 (N)")
+@click.option("--buffer", type=int, default=None, help="exp: 데이터 버퍼 크기")
+@click.option("--recordlength", type=int, default=None, help="exp: IO 레코드 길이")
+@click.option("--inctype", default=None, help="exp: 증분 익스포트 타입")
+@click.option("--record/--no-record", default=None, help="exp: 증분 익스포트 추적 (Y)")
+@click.option("--statistics", type=click.Choice(["ESTIMATE", "COMPUTE", "NONE"]), default=None, help="exp: 통계 분석 (ESTIMATE)")
+@click.option("--object-consistent/--no-object-consistent", default=None, help="exp: 객체 익스포트 중 read-only 트랜잭션")
+@click.option("--feedback", type=int, default=None, help="exp: x행마다 진행률 출력 (0=비활성)")
+@click.option("--resumable/--no-resumable", default=None, help="exp: 공간 오류 시 일시 중단")
+@click.option("--resumable-name", default=None, help="exp: Resumable 구문 식별 문자열")
+@click.option("--resumable-timeout", type=int, default=None, help="exp: Resumable 대기 시간")
+@click.option("--tts-full-check/--no-tts-full-check", default=None, help="exp: TTS 전체/부분 의존성 검사")
+@click.option("--volsize", default=None, help="exp: 테이프 볼륨당 바이트 수")
+@click.option("--transport-tablespace/--no-transport-tablespace", default=None, help="exp: Transportable Tablespace 메타데이터 익스포트")
+@click.option("--template", default=None, help="exp: iAS 모드 익스포트 템플릿명")
 @click.option("--content", type=click.Choice(["ALL", "DATA_ONLY", "METADATA_ONLY"]), default=None, help="Export 내용")
 @click.option("--exclude", default=None, help="제외할 객체 (예: STATISTICS)")
 @click.option("--estimate-only", is_flag=True, default=False, help="실제 추출 없이 예상 크기만 확인")
-def cmd_export(config, thick, method, mode, targets, directory, dumpfile, logfile, parallel, compression, schemas, consistent, content, exclude, estimate_only):
+@click.option("--estimate", type=click.Choice(["BLOCKS", "STATISTICS"]), default=None)
+@click.option("--filesize", default=None)
+@click.option("--flashback-scn", default=None)
+@click.option("--flashback-time", default=None)
+@click.option("--include", default=None)
+@click.option("--network-link", default=None)
+@click.option("--query", default=None)
+@click.option("--remap-data", default=None)
+@click.option("--reuse-dumpfiles", is_flag=True, default=False)
+@click.option("--sample", default=None)
+@click.option("--version", default=None)
+@click.option("--cluster", is_flag=True, default=None)
+@click.option("--encryption", type=click.Choice(["ALL", "DATA_ONLY", "ENCRYPTED_COLUMNS_ONLY", "METADATA_ONLY", "NONE"]), default=None)
+@click.option("--encryption-algorithm", type=click.Choice(["AES128", "AES192", "AES256"]), default=None)
+@click.option("--encryption-mode", type=click.Choice(["DUAL", "PASSWORD", "TRANSPARENT"]), default=None)
+@click.option("--encryption-password", default=None)
+@click.option("--job-name", default=None)
+def cmd_export(config, thick, method, mode, targets, directory, dumpfile, logfile, parallel, compression, schemas, consistent, content, exclude, estimate_only,
+               estimate, filesize, flashback_scn, flashback_time, include, network_link, query, remap_data, reuse_dumpfiles, sample, version, cluster,
+               encryption, encryption_algorithm, encryption_mode, encryption_password, job_name,
+               grants, indexes, rows, constraints, triggers, direct, buffer, recordlength, inctype, record, statistics, object_consistent,
+               feedback, resumable, resumable_name, resumable_timeout, tts_full_check, volsize, transport_tablespace, template):
     """Step 3: Source DB Export (exp/expdp)."""
     cfg = load_config(config)
     ensure_dirs(cfg)
@@ -123,6 +188,45 @@ def cmd_export(config, thick, method, mode, targets, directory, dumpfile, logfil
     if content: exp_cfg["content"] = content
     if exclude: exp_cfg["exclude"] = exclude
     if estimate_only: exp_cfg["estimate_only"] = True
+    if estimate: exp_cfg["estimate"] = estimate
+    if filesize: exp_cfg["filesize"] = filesize
+    if flashback_scn: exp_cfg["flashback_scn"] = flashback_scn
+    if flashback_time: exp_cfg["flashback_time"] = flashback_time
+    if include: exp_cfg["include"] = include
+    if network_link: exp_cfg["network_link"] = network_link
+    if query: exp_cfg["query"] = query
+    if remap_data: exp_cfg["remap_data"] = remap_data
+    if reuse_dumpfiles: exp_cfg["reuse_dumpfiles"] = reuse_dumpfiles
+    if sample: exp_cfg["sample"] = sample
+    if version: exp_cfg["version"] = version
+    if cluster is not None: exp_cfg["cluster"] = cluster
+    if encryption: exp_cfg["encryption"] = encryption
+    if encryption_algorithm: exp_cfg["encryption_algorithm"] = encryption_algorithm
+    if encryption_mode: exp_cfg["encryption_mode"] = encryption_mode
+    if encryption_password: exp_cfg["encryption_password"] = encryption_password
+    if job_name: exp_cfg["job_name"] = job_name
+    # exp-only
+    if grants is not None: exp_cfg["grants"] = grants
+    if indexes is not None: exp_cfg["indexes"] = indexes
+    if rows is not None: exp_cfg["rows"] = rows
+    if constraints is not None: exp_cfg["constraints"] = constraints
+    if triggers is not None: exp_cfg["triggers"] = triggers
+    if direct is not None: exp_cfg["direct"] = direct
+    if buffer is not None: exp_cfg["buffer"] = buffer
+    if recordlength is not None: exp_cfg["recordlength"] = recordlength
+    if inctype: exp_cfg["inctype"] = inctype
+    if record is not None: exp_cfg["record"] = record
+    if statistics: exp_cfg["statistics"] = statistics
+    if object_consistent is not None: exp_cfg["object_consistent"] = object_consistent
+    if feedback is not None: exp_cfg["feedback"] = feedback
+    if resumable is not None: exp_cfg["resumable"] = resumable
+    if resumable_name: exp_cfg["resumable_name"] = resumable_name
+    if resumable_timeout is not None: exp_cfg["resumable_timeout"] = resumable_timeout
+    if tts_full_check is not None: exp_cfg["tts_full_check"] = tts_full_check
+    if volsize: exp_cfg["volsize"] = volsize
+    if transport_tablespace is not None: exp_cfg["transport_tablespace"] = transport_tablespace
+    if template: exp_cfg["template"] = template
+
 
     password = get_password(cfg["source"], "SOURCE")
     src_conn = OracleConnection(cfg["source"], label="SOURCE", thick_mode=thick)
@@ -172,16 +276,99 @@ def cmd_setup_target(config, thick):
 @CONFIG_OPT
 @THICK_OPT
 @click.option("--method", type=click.Choice(["imp", "impdp"]), default=None, help="imp 또는 impdp")
-def cmd_import(config, thick, method):
+# ── impdp-specific options ────────────────────────────────────────────────────
+@click.option("--mode", type=click.Choice(["full", "schema", "table", "tablespace"]), default=None)
+@click.option("--targets", default=None, help="대상 목록 (콤마 구분)")
+@click.option("--directory", default=None, help="Oracle DIRECTORY 객체명")
+@click.option("--dumpfile", default=None, help="덤프 파일명")
+@click.option("--logfile", default=None, help="로그 파일명")
+@click.option("--parallel", type=int, default=None)
+@click.option("--table-exists-action", type=click.Choice(["SKIP", "APPEND", "TRUNCATE", "REPLACE"]), default=None)
+@click.option("--content", type=click.Choice(["ALL", "DATA_ONLY", "METADATA_ONLY"]), default=None)
+@click.option("--exclude", default=None)
+@click.option("--include", default=None)
+@click.option("--query", default=None)
+@click.option("--remap-schema", default=None, help="SOURCE:TARGET (콤마 구분 다중 가능)")
+@click.option("--remap-tablespace", default=None, help="SOURCE:TARGET (콤마 구분 다중 가능)")
+@click.option("--remap-datafile", default=None)
+@click.option("--remap-data", default=None)
+@click.option("--remap-table", default=None)
+@click.option("--network-link", default=None)
+@click.option("--flashback-scn", default=None)
+@click.option("--flashback-time", default=None)
+@click.option("--version", default=None)
+@click.option("--job-name", default=None)
+@click.option("--sqlfile", default=None, help="SQL DDL을 파일로 추출 (import 미실행)")
+@click.option("--cluster", is_flag=True, default=None)
+@click.option("--reuse-datafiles", is_flag=True, default=False)
+@click.option("--skip-unusable-indexes", is_flag=True, default=False)
+@click.option("--streams-configuration", is_flag=True, default=False)
+@click.option("--transport-full-check", is_flag=True, default=False)
+@click.option("--transport-tablespaces", default=None)
+@click.option("--transport-datafiles", default=None)
+@click.option("--encryption-password", default=None)
+@click.option("--transform", default=None, help="예: SEGMENT_ATTRIBUTES:N")
+@click.option("--status", type=int, default=None, help="Job 상태 모니터링 주기(초)")
+def cmd_import(config, thick, method,
+               mode, targets, directory, dumpfile, logfile, parallel, table_exists_action,
+               content, exclude, include, query,
+               remap_schema, remap_tablespace, remap_datafile, remap_data, remap_table,
+               network_link, flashback_scn, flashback_time, version, job_name, sqlfile,
+               cluster, reuse_datafiles, skip_unusable_indexes, streams_configuration,
+               transport_full_check, transport_tablespaces, transport_datafiles,
+               encryption_password, transform, status):
     """Step 6-7: Target DB Import (imp/impdp)."""
     cfg = load_config(config)
     ensure_dirs(cfg)
-    if method:
-        cfg["import"]["method"] = method
+
+    imp_cfg = cfg.setdefault("import", {})
+    if method:               imp_cfg["method"] = method
+    if mode:                 imp_cfg["mode"] = mode
+    if targets:              imp_cfg["targets"] = [t.strip() for t in targets.split(",") if t.strip()]
+    if directory:            imp_cfg["directory"] = directory
+    if dumpfile:             imp_cfg["dumpfile"] = dumpfile
+    if logfile:              imp_cfg["logfile"] = logfile
+    if parallel is not None: imp_cfg["parallel"] = parallel
+    if table_exists_action:  imp_cfg["table_exists_action"] = table_exists_action
+    if content:              imp_cfg["content"] = content
+    if exclude:              imp_cfg["exclude"] = exclude
+    if include:              imp_cfg["include"] = include
+    if query:                imp_cfg["query"] = query
+    if network_link:         imp_cfg["network_link"] = network_link
+    if flashback_scn:        imp_cfg["flashback_scn"] = flashback_scn
+    if flashback_time:       imp_cfg["flashback_time"] = flashback_time
+    if version:              imp_cfg["version"] = version
+    if job_name:             imp_cfg["job_name"] = job_name
+    if sqlfile:              imp_cfg["sqlfile"] = sqlfile
+    if cluster is not None:  imp_cfg["cluster"] = cluster
+    if reuse_datafiles:      imp_cfg["reuse_datafiles"] = True
+    if skip_unusable_indexes: imp_cfg["skip_unusable_indexes"] = True
+    if streams_configuration: imp_cfg["streams_configuration"] = True
+    if transport_full_check: imp_cfg["transport_full_check"] = True
+    if transport_tablespaces: imp_cfg["transport_tablespaces"] = transport_tablespaces
+    if transport_datafiles:  imp_cfg["transport_datafiles"] = transport_datafiles
+    if encryption_password:  imp_cfg["encryption_password"] = encryption_password
+    if transform:            imp_cfg["transform"] = transform
+    if status is not None:   imp_cfg["status"] = status
+    if remap_data:           imp_cfg["remap_data"] = remap_data
+    if remap_table:          imp_cfg["remap_table"] = remap_table
+    if remap_datafile:       imp_cfg["remap_datafile"] = remap_datafile
+    # parse remap_schema / remap_tablespace as dict
+    if remap_schema:
+        for pair in remap_schema.split(","):
+            if ":" in pair:
+                src, tgt = pair.strip().split(":", 1)
+                imp_cfg.setdefault("remap_schema", {})[src.strip()] = tgt.strip()
+    if remap_tablespace:
+        for pair in remap_tablespace.split(","):
+            if ":" in pair:
+                src, tgt = pair.strip().split(":", 1)
+                imp_cfg.setdefault("remap_tablespace", {})[src.strip()] = tgt.strip()
 
     password = get_password(cfg["target"], "TARGET")
     ok = run_import(cfg, password)
     sys.exit(0 if ok else 1)
+
 
 
 # ── compare ──────────────────────────────────────────────────────────────────

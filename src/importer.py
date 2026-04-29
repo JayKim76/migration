@@ -48,15 +48,15 @@ def build_impdp_parfile(cfg: dict, password: str) -> tuple[str, str]:
     exp_cfg = cfg.get("export", {})
     dump_dir = cfg.get("output", {}).get("dump_dir", "output/dumps")
 
-    schemas = ",".join(exp_cfg.get("schemas", []))
+    mode = imp_cfg.get("mode", "schema").lower()
+    targets = imp_cfg.get("targets", exp_cfg.get("schemas", []))
     directory = imp_cfg.get("directory", exp_cfg.get("directory", "DATA_PUMP_DIR"))
-    dumpfile = imp_cfg.get("dumpfile", exp_cfg.get("dumpfile", "migration_%U.dmp"))
-    logfile = imp_cfg.get("logfile", "import.log")
-    parallel = imp_cfg.get("parallel", 4)
+    dumpfile  = imp_cfg.get("dumpfile",  exp_cfg.get("dumpfile",  "migration_%U.dmp"))
+    logfile   = imp_cfg.get("logfile",   "import.log")
+    parallel  = imp_cfg.get("parallel",  4)
     table_exists = imp_cfg.get("table_exists_action", "REPLACE")
 
     lines = [
-        f"SCHEMAS={schemas}",
         f"DIRECTORY={directory}",
         f"DUMPFILE={dumpfile}",
         f"LOGFILE={logfile}",
@@ -64,20 +64,55 @@ def build_impdp_parfile(cfg: dict, password: str) -> tuple[str, str]:
         f"TABLE_EXISTS_ACTION={table_exists}",
     ]
 
+    # Mode target line
+    target_str = ",".join(targets)
+    if mode == "full":
+        lines.append("FULL=Y")
+    elif mode == "schema" and target_str:
+        lines.append(f"SCHEMAS={target_str}")
+    elif mode == "table" and target_str:
+        lines.append(f"TABLES={target_str}")
+    elif mode == "tablespace" and target_str:
+        lines.append(f"TABLESPACES={target_str}")
+
     # REMAP_TABLESPACE
-    remap_ts = imp_cfg.get("remap_tablespace", {})
-    for src_ts, tgt_ts in remap_ts.items():
+    for src_ts, tgt_ts in imp_cfg.get("remap_tablespace", {}).items():
         lines.append(f"REMAP_TABLESPACE={src_ts}:{tgt_ts}")
 
     # REMAP_SCHEMA
-    remap_sc = imp_cfg.get("remap_schema", {})
-    for src_sc, tgt_sc in remap_sc.items():
+    for src_sc, tgt_sc in imp_cfg.get("remap_schema", {}).items():
         lines.append(f"REMAP_SCHEMA={src_sc}:{tgt_sc}")
+
+    # Optional string/numeric params
+    if imp_cfg.get("content"):             lines.append(f"CONTENT={imp_cfg['content']}")
+    if imp_cfg.get("exclude"):             lines.append(f"EXCLUDE={imp_cfg['exclude']}")
+    if imp_cfg.get("include"):             lines.append(f"INCLUDE={imp_cfg['include']}")
+    if imp_cfg.get("query"):               lines.append(f"QUERY={imp_cfg['query']}")
+    if imp_cfg.get("remap_data"):          lines.append(f"REMAP_DATA={imp_cfg['remap_data']}")
+    if imp_cfg.get("remap_datafile"):      lines.append(f"REMAP_DATAFILE={imp_cfg['remap_datafile']}")
+    if imp_cfg.get("remap_table"):         lines.append(f"REMAP_TABLE={imp_cfg['remap_table']}")
+    if imp_cfg.get("network_link"):        lines.append(f"NETWORK_LINK={imp_cfg['network_link']}")
+    if imp_cfg.get("flashback_scn"):       lines.append(f"FLASHBACK_SCN={imp_cfg['flashback_scn']}")
+    if imp_cfg.get("flashback_time"):      lines.append(f"FLASHBACK_TIME={imp_cfg['flashback_time']}")
+    if imp_cfg.get("version"):             lines.append(f"VERSION={imp_cfg['version']}")
+    if imp_cfg.get("job_name"):            lines.append(f"JOB_NAME={imp_cfg['job_name']}")
+    if imp_cfg.get("sqlfile"):             lines.append(f"SQLFILE={imp_cfg['sqlfile']}")
+    if imp_cfg.get("transform"):           lines.append(f"TRANSFORM={imp_cfg['transform']}")
+    if imp_cfg.get("transport_tablespaces"): lines.append(f"TRANSPORT_TABLESPACES={imp_cfg['transport_tablespaces']}")
+    if imp_cfg.get("transport_datafiles"): lines.append(f"TRANSPORT_DATAFILES={imp_cfg['transport_datafiles']}")
+    if imp_cfg.get("encryption_password"): lines.append(f"ENCRYPTION_PASSWORD={imp_cfg['encryption_password']}")
+    if imp_cfg.get("status") is not None:  lines.append(f"STATUS={imp_cfg['status']}")
+    if imp_cfg.get("cluster") is not None: lines.append(f"CLUSTER={'Y' if imp_cfg['cluster'] else 'N'}")
+    if imp_cfg.get("reuse_datafiles"):     lines.append("REUSE_DATAFILES=Y")
+    if imp_cfg.get("skip_unusable_indexes"): lines.append("SKIP_UNUSABLE_INDEXES=Y")
+    if imp_cfg.get("streams_configuration"): lines.append("STREAMS_CONFIGURATION=Y")
+    if imp_cfg.get("transport_full_check"): lines.append("TRANSPORT_FULL_CHECK=Y")
 
     content = "\n".join(lines)
     ts = timestamp_str()
     parfile_path = str(Path(dump_dir) / f"impdp_{ts}.par")
     return content, parfile_path
+
 
 
 def build_imp_parfile(cfg: dict, password: str) -> tuple[str, str]:
