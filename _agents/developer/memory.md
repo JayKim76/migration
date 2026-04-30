@@ -14,3 +14,16 @@ _Developer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-04-28] 기존 코드를 수정하지 않고 외부 데이터 파일(JSON 또는 Markdown)을 읽어와 웹 페이지에 동적으로 렌더링하는 데이터 파이프라인을 구축하고 구현하세요. → 산출물 sessions/2026-04-28T01-53/developer.md
 - [2026-04-28] 데이터 무결성 검증(DIV) 기능이 강화된 자동화 파이프라인 아키텍처를 설계하고, 사용자 인터페이스(Web UI)를 위한 API 명세서를 작성하라. → 산출물 sessions/2026-04-28T02-02/developer.md
 - [2026-04-28] 현재까지 완료된 작업의 결과물(웹 페이지, 데이터 시각화 또는 CLI 출력값)을 로컬 화면에 즉시 렌더링하고 사용자에게 출력하십시오. → 산출물 sessions/2026-04-28T07-47/developer.md
+- [2026-04-28] 'colorama' 패키지를 설치(`pip install colorama`)하고, 향후 재발 방지를 위해 프로젝트의 의존성 관리 파일(requirements.txt 등)에 해당 라이브러리를 즉시 업데이트하여 환경 일관성을 확보하십시오. → 산출물 sessions/2026-04-28T07-53/developer.md
+- [2026-04-28] 현재 작업 중인 데이터와 분석 로직을 로컬 웹 서버 또는 터미널 UI(TUI)로 즉시 렌더링할 수 있는 실행 스크립트를 구동하고, 결과값을 로컬 화면에 출력하십시오. → 산출물 sessions/2026-04-28T08-01/developer.md
+- [2026-04-28] 확정된 마일스톤에 따라 차기 모듈(예: Data Extraction 로직)을 개발하십시오. 이때 'from scratch' 원칙과 'Zero-Risk' 가치를 준수하며, 기존에 정의된 에러 처리 및 모니터링 UI를 통합하십시오. → 산출물 sessions/2026-04-28T08-08/developer.md
+- [2026-04-29] 리서치 결과를 바탕으로 'Zero-Risk'를 보장하기 위한 데이터 무결성 검증(DIV) 강화, 자동화된 에러 복구(Rollback) 로직, 성능 최적화(Multi-threading) 및 확장 가능한 모듈형 아키텍처 설계안을 작성하라. → 산출물 sessions/2026-04-29T03-20/developer.md
+- [2026-04-29] 정의된 규격을 바탕으로 3단계 DIV 엔진, Checkpointing/Rollback 로직, 그리고 모듈형 Adapter 패턴 구조를 포함한 핵심 마이그레이션 프레임워크를 구현하라. → 산출물 sessions/2026-04-29T06-25/developer.md
+- [2026-04-29] 기존 설계안에 따라 `BaseAdapter` 추상 클래스와 `3-Stage DIV` 엔진(데이터 무결성 검증 로직)의 핵심 파이썬 코드를 작성하세요. 롤백 기능, 에러 핸들링, 그리고 TUI 출력을 위한 구조를 포함하여 'Zero-Risk' 가치를 코드로 구현해야 합니다. → 산출물 sessions/2026-04-29T06-41/developer.md
+- [2026-04-29] PostgreSQLAdapter 클래스를 구현하고, 기존 3-Stage DIV 엔진을 적용하여 소스-타겟 간 데이터 일치성을 검증하는 통합 테스트 스크립트를 작성 및 실행할 것 → 산출물 sessions/2026-04-29T06-50/developer.md
+- [2026-04-29] `PostgreSQLAdapter`에 3-Stage DIV 엔진을 통합하고, `psycopg2`를 이용한 실제 DB 연동 및 데이터 무결성 검증 로직을 구현하여 통합 테스트를 수행하라. → 산출물 sessions/2026-04-29T07-11/developer.md
+- [2026-04-29] 기존 어댑터 패턴을 기반으로 `MySQLAdapter` 및 `MSSQLAdapter` 개발에 착수하고, 3-Stage DIV 엔진이 통합되도록 구현할 것 → 산출물 sessions/2026-04-29T07-18/developer.md
+- [2026-04-29] Researcher의 리포트를 바탕으로 MySQLAdapter 및 MSSQLAdapter의 상세 로직을 구현하고, 3-Stage DIV 엔진이 각 DB 타입의 특성에 맞춰 정확히 작동하는지 단위 테스트를 수행할 것. → 산출물 sessions/2026-04-29T07-37/developer.md
+- [2026-04-29] MSSQLAdapter 구현(DATETIME2, NVARCHAR(MAX) 처리 로직 집중) 및 Business가 설계한 리스크 시나리오를 재현할 RiskSimulator 모듈 개발 착수 → 산출물 sessions/2026-04-29T09-04/developer.md
+- [2026-04-30] PostgreSQLAdapter 내의 NUMBER 타입 매핑 로직을 재검토하고, 소수점(Scale) 정밀도 유실을 방지하는 로직을 우선적으로 구현하여 테스트 가능한 코드를 작성하라. → 산출물 sessions/2026-04-30T03-15/developer.md
+- [2026-04-30] 개발된 RiskSimulator를 활용하여, MySQL 및 MSSQL 어댑터와 통합된 환경에서 데이터 타입 불일치, 길이 초과 등 모든 에러 케이스를 강제 발생시키고 롤백 기능의 성공 여부를 검증하는 통합 부하 테스트를 수행하라. → 산출물 sessions/2026-04-30T03-15/developer.md
