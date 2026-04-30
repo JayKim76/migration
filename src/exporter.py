@@ -78,6 +78,26 @@ def build_expdp_parfile(cfg: dict, password: str) -> tuple[str, str]:
         lines.append(f"EXCLUDE={exclude}")
     if estimate_only:
         lines.append("ESTIMATE_ONLY=Y")
+    
+    # New Advanced Options
+    if exp_cfg.get("estimate"): lines.append(f"ESTIMATE={exp_cfg['estimate']}")
+    if exp_cfg.get("filesize"): lines.append(f"FILESIZE={exp_cfg['filesize']}")
+    if exp_cfg.get("flashback_scn"): lines.append(f"FLASHBACK_SCN={exp_cfg['flashback_scn']}")
+    if exp_cfg.get("flashback_time"): lines.append(f"FLASHBACK_TIME={exp_cfg['flashback_time']}")
+    if exp_cfg.get("include"): lines.append(f"INCLUDE={exp_cfg['include']}")
+    if exp_cfg.get("network_link"): lines.append(f"NETWORK_LINK={exp_cfg['network_link']}")
+    if exp_cfg.get("query"): lines.append(f"QUERY={exp_cfg['query']}")
+    if exp_cfg.get("remap_data"): lines.append(f"REMAP_DATA={exp_cfg['remap_data']}")
+    if exp_cfg.get("reuse_dumpfiles"): lines.append("REUSE_DUMPFILES=Y")
+    if exp_cfg.get("sample"): lines.append(f"SAMPLE={exp_cfg['sample']}")
+    if exp_cfg.get("version"): lines.append(f"VERSION={exp_cfg['version']}")
+    if exp_cfg.get("cluster") is not None: lines.append(f"CLUSTER={'Y' if exp_cfg['cluster'] else 'N'}")
+    if exp_cfg.get("encryption"): lines.append(f"ENCRYPTION={exp_cfg['encryption']}")
+    if exp_cfg.get("encryption_algorithm"): lines.append(f"ENCRYPTION_ALGORITHM={exp_cfg['encryption_algorithm']}")
+    if exp_cfg.get("encryption_mode"): lines.append(f"ENCRYPTION_MODE={exp_cfg['encryption_mode']}")
+    if exp_cfg.get("encryption_password"): lines.append(f"ENCRYPTION_PASSWORD={exp_cfg['encryption_password']}")
+    if exp_cfg.get("job_name"): lines.append(f"JOB_NAME={exp_cfg['job_name']}")
+
 
     content = "\n".join(lines)
     ts = timestamp_str()
@@ -93,24 +113,71 @@ def build_exp_parfile(cfg: dict, password: str) -> tuple[str, str]:
     exp_cfg = cfg.get("export", {})
     dump_dir = cfg.get("output", {}).get("dump_dir", "output/dumps")
 
-    schemas = ",".join(exp_cfg.get("schemas", []))
+    schemas = ",".join(exp_cfg.get("schemas", exp_cfg.get("targets", [])))
     ts = timestamp_str()
-    dumpfile = str(Path(dump_dir) / f"migration_{ts}.dmp")
-    logfile = str(Path(dump_dir) / f"export_{ts}.log")
-    consistent = "Y" if exp_cfg.get("consistent", True) else "N"
+    dumpfile = exp_cfg.get("dumpfile", str(Path(dump_dir) / f"migration_{ts}.dmp"))
+    logfile = exp_cfg.get("logfile", str(Path(dump_dir) / f"export_{ts}.log"))
+
+    def yn(key, default=True):
+        val = exp_cfg.get(key)
+        if val is None:
+            return "Y" if default else "N"
+        return "Y" if val else "N"
 
     lines = [
-        f"OWNER=({schemas})",
         f"FILE={dumpfile}",
         f"LOG={logfile}",
-        f"CONSISTENT={consistent}",
-        "COMPRESS=Y",
-        "STATISTICS=NONE",
+        f"CONSISTENT={yn('consistent', False)}",
+        f"COMPRESS={yn('compress', True)}",
+        f"GRANTS={yn('grants', True)}",
+        f"INDEXES={yn('indexes', True)}",
+        f"ROWS={yn('rows', True)}",
+        f"CONSTRAINTS={yn('constraints', True)}",
+        f"TRIGGERS={yn('triggers', True)}",
     ]
+
+    if schemas:
+        lines.append(f"OWNER=({schemas})")
+
+    mode = exp_cfg.get("mode", "schema").lower()
+    if mode == "full":
+        lines.append("FULL=Y")
+    elif mode == "table":
+        tables = ",".join(exp_cfg.get("targets", []))
+        if tables:
+            lines.append(f"TABLES=({tables})")
+    elif mode == "tablespace":
+        tablespaces = ",".join(exp_cfg.get("targets", []))
+        if tablespaces:
+            lines.append(f"TABLESPACES=({tablespaces})")
+
+    # Optional numeric/string parameters
+    if exp_cfg.get("buffer") is not None:   lines.append(f"BUFFER={exp_cfg['buffer']}")
+    if exp_cfg.get("recordlength") is not None: lines.append(f"RECORDLENGTH={exp_cfg['recordlength']}")
+    if exp_cfg.get("feedback") is not None:  lines.append(f"FEEDBACK={exp_cfg['feedback']}")
+    if exp_cfg.get("filesize"):             lines.append(f"FILESIZE={exp_cfg['filesize']}")
+    if exp_cfg.get("volsize"):              lines.append(f"VOLSIZE={exp_cfg['volsize']}")
+    if exp_cfg.get("query"):                lines.append(f"QUERY={exp_cfg['query']}")
+    if exp_cfg.get("inctype"):              lines.append(f"INCTYPE={exp_cfg['inctype']}")
+    if exp_cfg.get("statistics"):           lines.append(f"STATISTICS={exp_cfg['statistics']}")
+    if exp_cfg.get("flashback_scn"):        lines.append(f"FLASHBACK_SCN={exp_cfg['flashback_scn']}")
+    if exp_cfg.get("flashback_time"):       lines.append(f"FLASHBACK_TIME={exp_cfg['flashback_time']}")
+    if exp_cfg.get("resumable_name"):       lines.append(f"RESUMABLE_NAME={exp_cfg['resumable_name']}")
+    if exp_cfg.get("resumable_timeout") is not None: lines.append(f"RESUMABLE_TIMEOUT={exp_cfg['resumable_timeout']}")
+    if exp_cfg.get("template"):             lines.append(f"TEMPLATE={exp_cfg['template']}")
+
+    # Optional boolean parameters
+    if exp_cfg.get("direct") is not None:             lines.append(f"DIRECT={yn('direct', False)}")
+    if exp_cfg.get("record") is not None:             lines.append(f"RECORD={yn('record', True)}")
+    if exp_cfg.get("object_consistent") is not None:  lines.append(f"OBJECT_CONSISTENT={yn('object_consistent', False)}")
+    if exp_cfg.get("resumable") is not None:          lines.append(f"RESUMABLE={yn('resumable', False)}")
+    if exp_cfg.get("tts_full_check") is not None:     lines.append(f"TTS_FULL_CHECK={yn('tts_full_check', False)}")
+    if exp_cfg.get("transport_tablespace") is not None: lines.append(f"TRANSPORT_TABLESPACE={yn('transport_tablespace', False)}")
 
     content = "\n".join(lines)
     parfile_path = str(Path(dump_dir) / f"exp_{ts}.par")
     return content, parfile_path
+
 
 
 # ── 명령 실행 헬퍼 ────────────────────────────────────────────────────────────

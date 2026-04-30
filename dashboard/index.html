@@ -84,26 +84,34 @@
                                     <h4>Linux Server Info</h4>
                                     <div class="input-group">
                                         <label>IP Address / Host</label>
-                                        <input type="text" value="192.168.1.100" placeholder="10.0.0.1">
+                                        <input type="text" id="src-ssh-host" value="192.168.1.100" placeholder="10.0.0.1">
                                     </div>
                                     <div class="input-group">
                                         <label>SSH Username</label>
-                                        <input type="text" value="oracle" placeholder="oracle">
+                                        <input type="text" id="src-ssh-user" value="oracle" placeholder="oracle">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>SSH Password</label>
+                                        <input type="password" id="src-ssh-pass" placeholder="Leave empty if using keys">
                                     </div>
                                 </div>
                                 <div class="conn-group">
                                     <h4>Oracle Database Info</h4>
                                     <div class="input-group">
                                         <label>SID / Service Name</label>
-                                        <input type="text" value="ORCL" placeholder="ORCL">
+                                        <input type="text" id="src-db-sid" value="ORCL" placeholder="ORCL">
                                     </div>
                                     <div class="input-group">
                                         <label>DB Port</label>
-                                        <input type="text" value="1521" placeholder="1521">
+                                        <input type="text" id="src-db-port" value="1521" placeholder="1521">
                                     </div>
                                     <div class="input-group">
                                         <label>Schema User</label>
-                                        <input type="text" value="system" placeholder="system">
+                                        <input type="text" id="src-db-user" value="system" placeholder="system">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Schema Password</label>
+                                        <input type="password" id="src-db-pass" placeholder="Database password">
                                     </div>
                                 </div>
                                 <div class="button-group" style="margin-top: 1rem;">
@@ -118,26 +126,34 @@
                                     <h4>Linux Server Info</h4>
                                     <div class="input-group">
                                         <label>IP Address / Host</label>
-                                        <input type="text" value="192.168.1.200" placeholder="10.0.0.2">
+                                        <input type="text" id="tgt-ssh-host" value="192.168.1.200" placeholder="10.0.0.2">
                                     </div>
                                     <div class="input-group">
                                         <label>SSH Username</label>
-                                        <input type="text" value="oracle" placeholder="oracle">
+                                        <input type="text" id="tgt-ssh-user" value="oracle" placeholder="oracle">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>SSH Password</label>
+                                        <input type="password" id="tgt-ssh-pass" placeholder="Leave empty if using keys">
                                     </div>
                                 </div>
                                 <div class="conn-group">
                                     <h4>Oracle Database Info</h4>
                                     <div class="input-group">
                                         <label>SID / Service Name</label>
-                                        <input type="text" value="ORCL_TGT" placeholder="ORCL">
+                                        <input type="text" id="tgt-db-sid" value="ORCL_TGT" placeholder="ORCL">
                                     </div>
                                     <div class="input-group">
                                         <label>DB Port</label>
-                                        <input type="text" value="1521" placeholder="1521">
+                                        <input type="text" id="tgt-db-port" value="1521" placeholder="1521">
                                     </div>
                                     <div class="input-group">
                                         <label>Schema User</label>
-                                        <input type="text" value="system" placeholder="system">
+                                        <input type="text" id="tgt-db-user" value="system" placeholder="system">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Schema Password</label>
+                                        <input type="password" id="tgt-db-pass" placeholder="Database password">
                                     </div>
                                 </div>
                                 <div class="button-group" style="margin-top: 1rem;">
@@ -161,6 +177,12 @@
                             <img src="assets/hero.png" alt="Migration Hero">
                         </div>
                         <p>Extracting tablespace, user roles, and schema DDL from source.</p>
+                        <div class="input-grid" style="margin-bottom: 1.5rem;">
+                            <div class="input-group" style="grid-column: span 2;">
+                                <label>DDL Save Path (Directory)</label>
+                                <input type="text" id="ddl-save-path" value="output/ddl" placeholder="e.g. output/ddl">
+                            </div>
+                        </div>
                         <div id="step-2-terminal" class="terminal">
                             [READY] Waiting for extraction command...
                         </div>
@@ -254,19 +276,233 @@
                                     </div>
                                     <div class="input-group" style="grid-column: span 2;">
                                         <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; margin-top: 10px;">
-                                            <input type="checkbox" id="exp-estimate" style="width: 18px; height: 18px;">
+                                            <input type="checkbox" id="exp-estimate-only" style="width: 18px; height: 18px;">
                                             <span style="color: white; font-weight: 600;">Estimate Only (Do not export data)</span>
                                         </label>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Extended EXPDP Options -->
+                            <div class="conn-group expdp-option" style="grid-column: span 2;">
+                                <h4>Extended Data Pump Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Estimate Method</label>
+                                        <select id="exp-estimate" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">Default (BLOCKS)</option>
+                                            <option value="BLOCKS">BLOCKS</option>
+                                            <option value="STATISTICS">STATISTICS</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Filesize (e.g. 5G)</label>
+                                        <input type="text" id="exp-filesize" placeholder="Leave empty for unlimited">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback SCN</label>
+                                        <input type="text" id="exp-flashback-scn" placeholder="e.g. 123456789">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback Time</label>
+                                        <input type="text" id="exp-flashback-time" placeholder="e.g. TO_TIMESTAMP(...)">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Include</label>
+                                        <input type="text" id="exp-include" placeholder="e.g. TABLE_DATA">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Network Link</label>
+                                        <input type="text" id="exp-network-link" placeholder="DB Link Name">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Query</label>
+                                        <input type="text" id="exp-query" placeholder="e.g. emp:&quot;WHERE deptno=10&quot;">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Remap Data</label>
+                                        <input type="text" id="exp-remap-data" placeholder="e.g. EMP.EMPNO:REMAPPKG.EMPNO">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Sample %</label>
+                                        <input type="number" id="exp-sample" placeholder="1-100" min="1" max="100">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Version</label>
+                                        <input type="text" id="exp-version" placeholder="e.g. COMPATIBLE or LATEST">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Job Name</label>
+                                        <input type="text" id="exp-job-name" placeholder="Optional job name">
+                                    </div>
+                                    
+                                    <div class="input-group" style="grid-column: span 2; display: flex; gap: 2rem;">
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-reuse-dumpfiles" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Reuse Dumpfiles (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-cluster" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Use Cluster (RAC)</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <h5 style="grid-column: span 2; color: var(--accent-cyan); margin-top: 10px; margin-bottom: 0;">Encryption Settings</h5>
+                                    <div class="input-group">
+                                        <label>Encryption Target</label>
+                                        <select id="exp-encryption" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">NONE</option>
+                                            <option value="ALL">ALL</option>
+                                            <option value="DATA_ONLY">DATA_ONLY</option>
+                                            <option value="ENCRYPTED_COLUMNS_ONLY">ENCRYPTED_COLUMNS_ONLY</option>
+                                            <option value="METADATA_ONLY">METADATA_ONLY</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Algorithm</label>
+                                        <select id="exp-encryption-algorithm" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">Default (AES128)</option>
+                                            <option value="AES128">AES128</option>
+                                            <option value="AES192">AES192</option>
+                                            <option value="AES256">AES256</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Mode</label>
+                                        <select id="exp-encryption-mode" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">Default (TRANSPARENT)</option>
+                                            <option value="DUAL">DUAL</option>
+                                            <option value="PASSWORD">PASSWORD</option>
+                                            <option value="TRANSPARENT">TRANSPARENT</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Password</label>
+                                        <input type="password" id="exp-encryption-password" placeholder="Encryption Key">
+                                    </div>
+                                </div>
+                            </div>
 
                             <!-- EXP Specific Options -->
-                            <div class="input-group exp-option" style="display: none; grid-column: span 2;">
-                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                                    <input type="checkbox" id="exp-consistent" checked style="width: 18px; height: 18px;">
-                                    <span style="color: white; font-weight: 600;">Consistent Export (CONSISTENT=Y)</span>
-                                </label>
+                            <div class="conn-group exp-option" style="display: none; grid-column: span 2;">
+                                <h4>Traditional Export (exp) Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+
+                                    <!-- Boolean flags row 1 -->
+                                    <div class="input-group" style="grid-column: span 2; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-grants" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Grants (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-indexes" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Indexes (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-rows" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Rows (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-constraints" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Constraints (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-triggers" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Triggers (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-consistent" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Consistent (N)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-direct" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Direct Path (N)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-record" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Record Incr. (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-object-consistent" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Object Consistent (N)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-resumable" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Resumable (N)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-tts-full-check" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">TTS Full Check (N)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="exp-transport-tablespace" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Transport Tablespace (N)</span>
+                                        </label>
+                                    </div>
+
+                                    <!-- Numeric / string parameters -->
+                                    <div class="input-group">
+                                        <label>Statistics</label>
+                                        <select id="exp-statistics" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="ESTIMATE">ESTIMATE (Default)</option>
+                                            <option value="COMPUTE">COMPUTE</option>
+                                            <option value="NONE">NONE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>INCTYPE</label>
+                                        <select id="exp-inctype" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">None (Default)</option>
+                                            <option value="COMPLETE">COMPLETE</option>
+                                            <option value="CUMULATIVE">CUMULATIVE</option>
+                                            <option value="INCREMENTAL">INCREMENTAL</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Buffer Size (bytes)</label>
+                                        <input type="number" id="exp-buffer" placeholder="e.g. 4096000">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Record Length</label>
+                                        <input type="number" id="exp-recordlength" placeholder="IO record length">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Filesize (bytes)</label>
+                                        <input type="text" id="exp-filesize-leg" placeholder="e.g. 2G">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Volsize (bytes/tape)</label>
+                                        <input type="text" id="exp-volsize" placeholder="e.g. 1G">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Feedback (rows)</label>
+                                        <input type="number" id="exp-feedback" value="0" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Resumable Timeout (sec)</label>
+                                        <input type="number" id="exp-resumable-timeout" placeholder="e.g. 3600">
+                                    </div>
+                                    <div class="input-group" style="grid-column: span 2;">
+                                        <label>Resumable Name</label>
+                                        <input type="text" id="exp-resumable-name" placeholder="Identifies resumable statement">
+                                    </div>
+                                    <div class="input-group" style="grid-column: span 2;">
+                                        <label>Query</label>
+                                        <input type="text" id="exp-query-leg" placeholder='e.g. "WHERE dept_id=10"'>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback SCN</label>
+                                        <input type="text" id="exp-flashback-scn-leg" placeholder="e.g. 123456789">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback Time</label>
+                                        <input type="text" id="exp-flashback-time-leg" placeholder="e.g. TO_TIMESTAMP(...)">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Template</label>
+                                        <input type="text" id="exp-template" placeholder="iAS mode template name">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -276,11 +512,21 @@
                             </div>
                             <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;" id="export-progress-text">Preparing export...</p>
                         </div>
+
+                        <!-- Preview Area -->
+                        <div id="export-preview-container" style="display: none; margin-top: 1.5rem;">
+                            <div class="card" style="background: rgba(0, 0, 0, 0.3); border-color: var(--accent-cyan);">
+                                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Command Preview</h4>
+                                <code id="export-command-preview" style="display: block; padding: 1rem; background: #000; border-radius: 5px; color: #0f0; font-family: monospace; word-break: break-all;"></code>
+                            </div>
+                        </div>
+
                         <div id="step-3-terminal" class="terminal">
                             [READY] Waiting for export command...
                         </div>
                         <div class="button-group">
-                            <button class="btn" onclick="runStep3()">Start Export</button>
+                            <button class="btn btn-secondary" id="btn-preview-export" onclick="previewExport()">Preview Command</button>
+                            <button class="btn" id="btn-run-export" onclick="runStep3()" style="display: none;">Start Export</button>
                         </div>
                     </div>
                 </section>
@@ -305,14 +551,280 @@
                 <section id="step-5" class="step-content">
                     <div class="card">
                         <div class="card-header">
-                            <div class="badge">Data Pump Import</div>
+                            <div class="badge">Data Ingestion</div>
                         </div>
-                        <h3>Importing Data to Target</h3>
+
+                        <!-- Method selector -->
+                        <div class="method-selector" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="radio" name="importMethod" value="impdp" checked onchange="toggleImportOptions()">
+                                <span style="font-weight: 600;">IMPDP (Data Pump)</span>
+                            </label>
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="radio" name="importMethod" value="imp" onchange="toggleImportOptions()">
+                                <span style="font-weight: 600;">IMP (Traditional)</span>
+                            </label>
+                        </div>
+
+                        <div class="input-grid" style="margin-bottom: 2rem;">
+                            <!-- Import Mode -->
+                            <div class="input-group">
+                                <label>Import Mode</label>
+                                <select id="imp-mode" onchange="toggleImportMode()" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                    <option value="schema">Schemas</option>
+                                    <option value="full">Full Database</option>
+                                    <option value="table">Tables</option>
+                                    <option value="tablespace">Tablespaces</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="imp-target-group">
+                                <label id="imp-targets-label">Target Schemas</label>
+                                <input type="text" id="imp-targets" placeholder="e.g. HR, SCOTT" value="HR, SCOTT">
+                            </div>
+
+                            <!-- File Configuration -->
+                            <div class="conn-group impdp-option" style="grid-column: span 2;">
+                                <h4>File Configuration</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Directory Object</label>
+                                        <input type="text" id="imp-directory" value="DATA_PUMP_DIR">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Dumpfile Name</label>
+                                        <input type="text" id="imp-dumpfile" value="migration_%U.dmp">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Logfile Name</label>
+                                        <input type="text" id="imp-logfile" value="import.log">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>SQL File (DDL extract only)</label>
+                                        <input type="text" id="imp-sqlfile" placeholder="e.g. ddl_output.sql">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- impdp Advanced Options -->
+                            <div class="conn-group impdp-option" style="grid-column: span 2;">
+                                <h4>Data Pump Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Parallel Degree</label>
+                                        <input type="number" id="imp-parallel" value="4" min="1" max="16">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Table Exists Action</label>
+                                        <select id="imp-table-exists" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="REPLACE">REPLACE</option>
+                                            <option value="SKIP">SKIP</option>
+                                            <option value="APPEND">APPEND</option>
+                                            <option value="TRUNCATE">TRUNCATE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Content</label>
+                                        <select id="imp-content" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">ALL (Default)</option>
+                                            <option value="DATA_ONLY">DATA_ONLY</option>
+                                            <option value="METADATA_ONLY">METADATA_ONLY</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Exclude</label>
+                                        <input type="text" id="imp-exclude" placeholder="e.g. STATISTICS, INDEX">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Include</label>
+                                        <input type="text" id="imp-include" placeholder="e.g. TABLE_DATA">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Query</label>
+                                        <input type="text" id="imp-query" placeholder='e.g. emp:"WHERE dept=10"'>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Remap Options -->
+                            <div class="conn-group impdp-option" style="grid-column: span 2;">
+                                <h4>Remap Settings</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Remap Schema</label>
+                                        <input type="text" id="imp-remap-schema" placeholder="e.g. OLD_HR:NEW_HR, OLD_SCOTT:SCOTT">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Remap Tablespace</label>
+                                        <input type="text" id="imp-remap-tablespace" placeholder="e.g. OLD_TS:NEW_TS">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Remap Datafile</label>
+                                        <input type="text" id="imp-remap-datafile" placeholder="e.g. /old/path:/new/path">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Remap Table</label>
+                                        <input type="text" id="imp-remap-table" placeholder="e.g. OLD_TABLE:NEW_TABLE">
+                                    </div>
+                                    <div class="input-group" style="grid-column: span 2;">
+                                        <label>Remap Data</label>
+                                        <input type="text" id="imp-remap-data" placeholder="e.g. EMP.EMPNO:REMAPPKG.EMPNO">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Extended Options -->
+                            <div class="conn-group impdp-option" style="grid-column: span 2;">
+                                <h4>Extended Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group">
+                                        <label>Network Link</label>
+                                        <input type="text" id="imp-network-link" placeholder="DB Link Name">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback SCN</label>
+                                        <input type="text" id="imp-flashback-scn" placeholder="e.g. 123456789">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Flashback Time</label>
+                                        <input type="text" id="imp-flashback-time" placeholder="e.g. TO_TIMESTAMP(...)">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Version</label>
+                                        <input type="text" id="imp-version" placeholder="e.g. COMPATIBLE or LATEST">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Job Name</label>
+                                        <input type="text" id="imp-job-name" placeholder="Optional job name">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Transform</label>
+                                        <input type="text" id="imp-transform" placeholder="e.g. SEGMENT_ATTRIBUTES:N">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Transport Tablespaces</label>
+                                        <input type="text" id="imp-transport-tablespaces" placeholder="e.g. TS1, TS2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Transport Datafiles</label>
+                                        <input type="text" id="imp-transport-datafiles" placeholder="e.g. /path/to/file.dbf">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Encryption Password</label>
+                                        <input type="password" id="imp-encryption-password" placeholder="Decryption key">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Status Interval (sec)</label>
+                                        <input type="number" id="imp-status" value="0" min="0">
+                                    </div>
+
+                                    <div class="input-group" style="grid-column: span 2; display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 8px;">
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-cluster" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Use Cluster (RAC)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-reuse-datafiles" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Reuse Datafiles (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-skip-unusable-indexes" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Skip Unusable Indexes</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-streams-configuration" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Streams Configuration</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-transport-full-check" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Transport Full Check</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- IMP (traditional) specific options -->
+                            <div class="conn-group imp-only-option" style="display: none; grid-column: span 2;">
+                                <h4>Traditional Import (imp) Options</h4>
+                                <div class="input-grid" style="margin-top: 0;">
+                                    <div class="input-group" style="grid-column: span 2; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-grants" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Grants (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-indexes" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Indexes (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-rows" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Rows (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-constraints" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Constraints (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-ignore" checked style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Ignore Errors (Y)</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                            <input type="checkbox" id="imp-full-leg" style="width: 18px; height: 18px;">
+                                            <span style="color: white; font-weight: 600;">Full Import (N)</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Fromuser</label>
+                                        <input type="text" id="imp-fromuser" placeholder="e.g. HR, SCOTT">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Touser</label>
+                                        <input type="text" id="imp-touser" placeholder="e.g. HR_NEW, SCOTT_NEW">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Dump File (FILE)</label>
+                                        <input type="text" id="imp-file-leg" placeholder="e.g. migration.dmp">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Log File (LOG)</label>
+                                        <input type="text" id="imp-log-leg" placeholder="e.g. import.log">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Buffer Size (bytes)</label>
+                                        <input type="number" id="imp-buffer" placeholder="e.g. 4096000">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Recordlength</label>
+                                        <input type="number" id="imp-recordlength" placeholder="IO record length">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Feedback (rows)</label>
+                                        <input type="number" id="imp-feedback" value="0" min="0">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Commit</label>
+                                        <select id="imp-commit" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 12px 16px; border-radius: 10px; color: white; font-family: 'Outfit', sans-serif; outline: none;">
+                                            <option value="">Default (N)</option>
+                                            <option value="Y">Y (Commit each array)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Import Preview Area -->
+                        <div id="import-preview-container" style="display: none; margin-top: 1.5rem;">
+                            <div class="card" style="background: rgba(0,0,0,0.3); border-color: var(--accent-cyan);">
+                                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Command Preview</h4>
+                                <code id="import-command-preview" style="display: block; padding: 1rem; background: #000; border-radius: 5px; color: #0f0; font-family: monospace; word-break: break-all;"></code>
+                            </div>
+                        </div>
+
                         <div id="step-5-terminal" class="terminal">
                             [READY] Waiting for import command...
                         </div>
                         <div class="button-group">
-                            <button class="btn" onclick="runStep5()">Start Import</button>
+                            <button class="btn btn-secondary" id="btn-preview-import" onclick="previewImport()">Preview Command</button>
+                            <button class="btn" id="btn-run-import" onclick="runStep5()" style="display: none;">Start Import</button>
                         </div>
                     </div>
                 </section>
