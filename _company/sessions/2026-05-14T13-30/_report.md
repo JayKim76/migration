@@ -1,0 +1,14 @@
+# 📝 CEO 종합 보고서
+
+[결과]
+회사의 목표, 각 에이전트의 개인 목표 파일(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 복습한 후 오늘 가장 가치 있는 단일 작업으로 다음과 결정되었습니다:
+
+* 텔레그램 봇 토크ン과 chat_id 설정: 시크릿/._telegram_setup.json 파일을 참조하십시오. 이 작업은 Secretarial 에이전트에게 할당됩니다.
+
+상세한 작업 분배와 진행 상황은 아래와 같습니다:
+
+1. Secretary 에이전트:
+   - 텔레그램 봇 토크ン과 chat_id 설정 완료
+   - 설정 파일(_company/_agents/secretary/config/._telegram_setup.json) 검토
+
+자가검증: 사실 2개 / 추측 0개

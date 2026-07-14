@@ -1,0 +1,2330 @@
+{
+  "tasks": [
+    {
+      "id": "20260510033444-r4uk",
+      "title": "[Developer/Designer/Business 에이전트에게 전달할 구체적 작업]",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-10T03:34:44.939Z",
+      "status": "done",
+      "sessionDir": "2026-05-10T03-32",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-10T03-32/_report.md\n- Researcher: 트렌드 분석 오토 플래너 도구 설정 및 실행 준비\n- 레오: 오토 플래너 도구 사용 시 각 시간대별로 생성되는 영상의 스크립트와 썸네일을 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 트렌드 분석 오토 플래너 도구 설정 및 실행 준비\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: CEO의 지시에 따라, 트렌드 분석 자동화 도구가 단순한 데이터 수집을 ",
+      "completedAt": "2026-05-10T03:36:37.276Z"
+    },
+    {
+      "id": "20260510145556-wdmu",
+      "title": "강아지 티키타카 영상 기획",
+      "description": "우리 영상은 강아지 2마리가 티키타카하는 주제로 만들어.",
+      "owner": "agent",
+      "createdAt": "2026-05-10T14:55:56.509Z",
+      "status": "done",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "sessionDir": "2026-05-10T16-47",
+      "evidence": "완료: sessions/2026-05-10T16-47/_report.md\n- Researcher: 최근 메모리와 회사 목표를 검토하여 지금까지의 성과와 미래 계획에 대한 분석을 수행하고, 가장 가치 있는 단일 작업을 추천해주세요.\n- 영숙: 추천된 작업을 기반으로 적절한 에이전트에게 분배하고 실행하도록 지시합니다. 같은 산출물을 반복하지 않기 위해 메모리 내에 비슷한 항목이 24시간\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 메모리와 회사 목표를 검토하여 지금까지의 성과와 미래 계획에 대한 분석을 수행하고, 가장 가치 있는 단일 작업을 추천해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 ",
+      "completedAt": "2026-05-10T16:51:00.535Z"
+    },
+    {
+      "id": "20260511051247-teh4",
+      "title": "영상 구성안(Storyboard) 초안 작성 (진행 중...)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T05:12:47.395Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T05-10",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T05-10/_report.md\n- Writer: ROI 공개라는 주제로 스크립트를 작성하세요.\n- 레오: 개발자에게 완성된 ROI 데이터와 스크립트를 받은 후, 이를 바탕으로 영상 구성안을 기획해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: ROI 공개라는 주제로 스크립트를 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer: 작업 시작합니다. / 📊 평가: 완료 — ROI 공개 주제에 대한 스크립트 초안을 작",
+      "completedAt": "2026-05-11T05:13:43.084Z"
+    },
+    {
+      "id": "20260511060328-d56h",
+      "title": "**Color Palette Refactoring**: 새로운 브랜드 컬러(Primary, Secondary, Accent, Semantic colors)를 CSS Variables 또는 Tailwind Config에 정의.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T06:03:28.872Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T06-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T06-01/_report.md\n- Developer: 새로운 슬로건과 비주얼 컨셉이 반영된 웹사이트 및 앱 UI를 업데이트하는 구체적이고 실행 가능한 작업 계획을 수립한다.\n\nCEO 종합 요점: 💻 **Developer Note:** 새로운 브랜드 정체성(Brand Identity)을 웹 및 앱 인터페이스에 반영하기 위한 **'UI/UX Modernization Roadmap'**을 수립하였습니다. 이 계획은 단순한 디자인 변경을 넘어, 테마 시스템(Design Tokens)의 재정의를 통해 향후 유지보수성을 극대화하는 데 초점을 맞춥니다.\n\n-",
+      "completedAt": "2026-05-11T06:03:28.902Z"
+    },
+    {
+      "id": "20260511060328-frel",
+      "title": "**Typography Scale**: 새로운 브랜드 폰트 적용 및 Heading/Body/Caption의 스케일(Size, Weight, Line-height) 재설정.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T06:03:28.880Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T06-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T06-01/_report.md\n- Developer: 새로운 슬로건과 비주얼 컨셉이 반영된 웹사이트 및 앱 UI를 업데이트하는 구체적이고 실행 가능한 작업 계획을 수립한다.\n\nCEO 종합 요점: 💻 **Developer Note:** 새로운 브랜드 정체성(Brand Identity)을 웹 및 앱 인터페이스에 반영하기 위한 **'UI/UX Modernization Roadmap'**을 수립하였습니다. 이 계획은 단순한 디자인 변경을 넘어, 테마 시스템(Design Tokens)의 재정의를 통해 향후 유지보수성을 극대화하는 데 초점을 맞춥니다.\n\n-",
+      "completedAt": "2026-05-11T06:03:28.905Z"
+    },
+    {
+      "id": "20260511060328-j21j",
+      "title": "**Elevation & Spacing**: 새로운 브랜드 무드에 맞는 Shadow(Depth) 값과 Spacing(Margin/Padding) 규칙 재정의.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T06:03:28.884Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T06-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T06-01/_report.md\n- Developer: 새로운 슬로건과 비주얼 컨셉이 반영된 웹사이트 및 앱 UI를 업데이트하는 구체적이고 실행 가능한 작업 계획을 수립한다.\n\nCEO 종합 요점: 💻 **Developer Note:** 새로운 브랜드 정체성(Brand Identity)을 웹 및 앱 인터페이스에 반영하기 위한 **'UI/UX Modernization Roadmap'**을 수립하였습니다. 이 계획은 단순한 디자인 변경을 넘어, 테마 시스템(Design Tokens)의 재정의를 통해 향후 유지보수성을 극대화하는 데 초점을 맞춥니다.\n\n-",
+      "completedAt": "2026-05-11T06:03:28.907Z"
+    },
+    {
+      "id": "20260511060328-r9a9",
+      "title": "**Border Radius**: 브랜드 아이덴티티(Sharp vs Rounded)에 따른 Corner Radius 값 통일.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T06:03:28.886Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T06-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T06-01/_report.md\n- Developer: 새로운 슬로건과 비주얼 컨셉이 반영된 웹사이트 및 앱 UI를 업데이트하는 구체적이고 실행 가능한 작업 계획을 수립한다.\n\nCEO 종합 요점: 💻 **Developer Note:** 새로운 브랜드 정체성(Brand Identity)을 웹 및 앱 인터페이스에 반영하기 위한 **'UI/UX Modernization Roadmap'**을 수립하였습니다. 이 계획은 단순한 디자인 변경을 넘어, 테마 시스템(Design Tokens)의 재정의를 통해 향후 유지보수성을 극대화하는 데 초점을 맞춥니다.\n\n-",
+      "completedAt": "2026-05-11T06:03:28.910Z"
+    },
+    {
+      "id": "20260511060328-nsxi",
+      "title": "**Buttons & Inputs**: 모든 버튼(Primary, Ghost, Outline)과 입력 필드의 스타일 업데이트.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T06:03:28.888Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T06-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T06-01/_report.md\n- Developer: 새로운 슬로건과 비주얼 컨셉이 반영된 웹사이트 및 앱 UI를 업데이트하는 구체적이고 실행 가능한 작업 계획을 수립한다.\n\nCEO 종합 요점: 💻 **Developer Note:** 새로운 브랜드 정체성(Brand Identity)을 웹 및 앱 인터페이스에 반영하기 위한 **'UI/UX Modernization Roadmap'**을 수립하였습니다. 이 계획은 단순한 디자인 변경을 넘어, 테마 시스템(Design Tokens)의 재정의를 통해 향후 유지보수성을 극대화하는 데 초점을 맞춥니다.\n\n-",
+      "completedAt": "2026-05-11T06:03:28.913Z"
+    },
+    {
+      "id": "20260511084213-s884",
+      "title": "**주제 확정:** `AI 에이전트 vs 전통적 자동화 스크립트`, 어떤 것이 더 효율적인가?",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T08:42:13.117Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.339Z"
+    },
+    {
+      "id": "20260511084213-jhjb",
+      "title": "**스크립트 작성:** 논쟁을 유도하는 3단계 구조 (Problem -> Comparison -> Question)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T08:42:13.128Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.342Z"
+    },
+    {
+      "id": "20260511084213-z507",
+      "title": "**시각 자료 준비:** 두 방식의 작업 속도 및 비용 비교 그래프 제작",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T08:42:13.130Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.343Z"
+    },
+    {
+      "id": "20260511084213-3tub",
+      "title": "**커뮤니티 탭 활용:** 영상 업로드 전, 유튜브 커뮤니티 탭을 통해 사전 투표 실시",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T08:42:13.133Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.346Z"
+    },
+    {
+      "id": "20260511084344-1cvq",
+      "title": "**주제 선정:** \"AI 개발자의 필수 기술 스킬트리\"",
+      "description": "자동 등록 (Instagram 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "instagram"
+      ],
+      "createdAt": "2026-05-11T08:43:44.414Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.348Z"
+    },
+    {
+      "id": "20260511084344-aak6",
+      "title": "**콘텐츠 구성:**",
+      "description": "자동 등록 (Instagram 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "instagram"
+      ],
+      "createdAt": "2026-05-11T08:43:44.416Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.349Z"
+    },
+    {
+      "id": "20260511084651-wgda",
+      "title": "특정 기술 뉴스 사이트(예: TechCrunch, AI News) 또는 RSS 피드로부터 최신 헤드라인 추출 기능 구현.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T08:46:51.463Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.352Z"
+    },
+    {
+      "id": "20260511084651-87hr",
+      "title": "`requests` 및 `BeautifulSoup`을 활용한 기본 웹 스크래핑 로직 작성.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T08:46:51.471Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.354Z"
+    },
+    {
+      "id": "20260511084651-nhbi",
+      "title": "에러 핸들링: 네트워크 타임아웃 및 구조 변경에 대비한 예외 처리.",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T08:46:51.473Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.359Z"
+    },
+    {
+      "id": "20260511084651-azr7",
+      "title": "수집된 비정형 텍스트에서 핵심 엔티티(Entity) 추출 (예: 기술명, 기업명, 트렌드 키워드).",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T08:46:51.476Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.362Z"
+    },
+    {
+      "id": "20260511084651-fpil",
+      "title": "추출된 데이터를 아래의 표준 스크립트 스키마로 변환:",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T08:46:51.479Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.364Z"
+    },
+    {
+      "id": "20260511084948-phom",
+      "title": "고객 선정: 적합한 고객을 찾아 그들에게 우리의 서비스가 어떻게 도움이 되는지 이해합니다.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-11T08:49:48.578Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.366Z"
+    },
+    {
+      "id": "20260511084948-qy76",
+      "title": "프로젝트 계획 수립: 고객 요구사항을 파악하고, 이를 바탕으로 효과적인 컨설팅 프로그램을 설계합니다.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-11T08:49:48.581Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.370Z"
+    },
+    {
+      "id": "20260511084948-exli",
+      "title": "컨설팅 제안서 작성: 고객에게 우리의 서비스 가치를 명확하게 전달하여 프로젝트 수행 확약을 이끌어냅니다.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-11T08:49:48.583Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T08-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T08-40/_report.md\n- 레오: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새\n- Instagram: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 인스타그램 채널 관리 및 콘텐츠 작업을 정하고, 적절\n- Designer: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 디자이너 작업을 정하고, 적절한 영역에 새로운 작업 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 주어진 메모리와 최근 의사결정 로그를 바탕으로, 오늘 업무 우선순위로 판단되는 가장 중요한 영상 기획 및 제작 작업을 정하고, 적절한 영역에 새로운 작업 파일(youtube.md)을 생성하여 그 내용을 작성하세요.\n> 🔧 **도구 실행*",
+      "completedAt": "2026-05-11T08:51:40.374Z"
+    },
+    {
+      "id": "20260511130449-9wu5",
+      "title": "Researcher의 데이터 입력 프로세스 연결 (진행 예정)",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-11T13:04:49.445Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-01/_report.md\n- 레오: 실질적 ROI(투자 대비 수익) 사례 중심의 영상 스크립트를 작성합니다.\n- Developer: AI 자동화 도입을 통한 실제 업무 자동화 사례(Case Study)의 수치를 확인하고, 전체 산업별 효율성 지표 조사에 반영하기\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 실질적 ROI(투자 대비 수익) 사례 중심의 영상 스크립트를 작성합니다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이",
+      "completedAt": "2026-05-11T13:05:35.784Z"
+    },
+    {
+      "id": "20260511132846-qmby",
+      "title": "AI 도입 전후 데이터 비교 및 수치 증감",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-11T13:28:46.800Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-25/_report.md\n- Business: 수익화 전략 및 KPI 설정\n- Writer: 데이터 기반의 스토리 라인을 작성하고, 카피를 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 수익화 전략 및 KPI 설정\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 작업은 다음과 같은 두 가지 측면을 포함합니다:\n> 📝 산출물 길이: 1011자\n\n### ✍️ Write",
+      "completedAt": "2026-05-11T13:29:27.354Z"
+    },
+    {
+      "id": "20260511132846-ihr5",
+      "title": "비용 절감 효과 설명",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-11T13:28:46.803Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-25/_report.md\n- Business: 수익화 전략 및 KPI 설정\n- Writer: 데이터 기반의 스토리 라인을 작성하고, 카피를 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 수익화 전략 및 KPI 설정\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 작업은 다음과 같은 두 가지 측면을 포함합니다:\n> 📝 산출물 길이: 1011자\n\n### ✍️ Write",
+      "completedAt": "2026-05-11T13:29:27.357Z"
+    },
+    {
+      "id": "20260511132846-hlyl",
+      "title": "실제 사례 및 관련 산업의 ROI 데이터 제공",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-11T13:28:46.805Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-25/_report.md\n- Business: 수익화 전략 및 KPI 설정\n- Writer: 데이터 기반의 스토리 라인을 작성하고, 카피를 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 수익화 전략 및 KPI 설정\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 작업은 다음과 같은 두 가지 측면을 포함합니다:\n> 📝 산출물 길이: 1011자\n\n### ✍️ Write",
+      "completedAt": "2026-05-11T13:29:27.362Z"
+    },
+    {
+      "id": "20260511132846-n1qb",
+      "title": "비즈니스 인사이트 제시",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-11T13:28:46.806Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-25/_report.md\n- Business: 수익화 전략 및 KPI 설정\n- Writer: 데이터 기반의 스토리 라인을 작성하고, 카피를 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 수익화 전략 및 KPI 설정\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 작업은 다음과 같은 두 가지 측면을 포함합니다:\n> 📝 산출물 길이: 1011자\n\n### ✍️ Write",
+      "completedAt": "2026-05-11T13:29:27.364Z"
+    },
+    {
+      "id": "20260511132846-3ktb",
+      "title": "데이터 이론 설명 및 실제 사례에서의 보안 및 정확성 향상",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-11T13:28:46.810Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T13-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T13-25/_report.md\n- Business: 수익화 전략 및 KPI 설정\n- Writer: 데이터 기반의 스토리 라인을 작성하고, 카피를 기획합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 수익화 전략 및 KPI 설정\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 작업은 다음과 같은 두 가지 측면을 포함합니다:\n> 📝 산출물 길이: 1011자\n\n### ✍️ Write",
+      "completedAt": "2026-05-11T13:29:27.367Z"
+    },
+    {
+      "id": "20260511174751-vt9e",
+      "title": "데이터 수집 및 분석 진행 중 (Next Step)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-11T17:47:51.815Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T17-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T17-46/_report.md\n- Researcher: AI 자동화 도입에 대한 경쟁사 연구 및 데이터 수집\n- Developer: 수집된 데이터를 기반으로 AI 자동화 ROI 측정 프레임워크의 초기 설계와 프로토타입 구축\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: AI 자동화 도입에 대한 경쟁사 연구 및 데이터 수집\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: <channel|>🔍 Researcher: 작업 시작합니다.\n> \ud83d",
+      "completedAt": "2026-05-11T17:50:52.915Z"
+    },
+    {
+      "id": "20260511174751-wx3y",
+      "title": "최종 보고서 작성 예정",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-11T17:47:51.839Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T17-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T17-46/_report.md\n- Researcher: AI 자동화 도입에 대한 경쟁사 연구 및 데이터 수집\n- Developer: 수집된 데이터를 기반으로 AI 자동화 ROI 측정 프레임워크의 초기 설계와 프로토타입 구축\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: AI 자동화 도입에 대한 경쟁사 연구 및 데이터 수집\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: <channel|>🔍 Researcher: 작업 시작합니다.\n> \ud83d",
+      "completedAt": "2026-05-11T17:50:52.948Z"
+    },
+    {
+      "id": "20260511200439-k199",
+      "title": "AI 도입 전/후 경제적 가치 비교 데이터 (Business 에이전트 협업 결과)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T20:04:39.091Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T20-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T20-01/_report.md\n- Business: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도\n- 레오: ROI 기반 제안서와 관련된 영상을 기획하고 제작합니다. 영상은 고객의 이해도를 높이고 AI 자동화 도입의 경제적 가치에 대한 솔루션의 가치를 \n- Designer: DVS 디자인 가이드라인에 따른, 실제 시각화 컴포넌트를 구축하고 이를 기반으로 컨설팅 보고서 및 프레젠테이션에 적용합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도 향상에 초점을 맞춥니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)",
+      "completedAt": "2026-05-11T20:06:38.958Z"
+    },
+    {
+      "id": "20260511200439-8py4",
+      "title": "영상 스토리보드 초안 (Hook - Problem - Solution - ROI - CTA)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T20:04:39.098Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T20-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T20-01/_report.md\n- Business: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도\n- 레오: ROI 기반 제안서와 관련된 영상을 기획하고 제작합니다. 영상은 고객의 이해도를 높이고 AI 자동화 도입의 경제적 가치에 대한 솔루션의 가치를 \n- Designer: DVS 디자인 가이드라인에 따른, 실제 시각화 컴포넌트를 구축하고 이를 기반으로 컨설팅 보고서 및 프레젠테이션에 적용합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도 향상에 초점을 맞춥니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)",
+      "completedAt": "2026-05-11T20:06:38.963Z"
+    },
+    {
+      "id": "20260511200439-h7ci",
+      "title": "제작에 필요한 핵심 인포그래픽 리스트",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-11T20:04:39.102Z",
+      "status": "done",
+      "sessionDir": "2026-05-11T20-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-11T20-01/_report.md\n- Business: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도\n- 레오: ROI 기반 제안서와 관련된 영상을 기획하고 제작합니다. 영상은 고객의 이해도를 높이고 AI 자동화 도입의 경제적 가치에 대한 솔루션의 가치를 \n- Designer: DVS 디자인 가이드라인에 따른, 실제 시각화 컴포넌트를 구축하고 이를 기반으로 컨설팅 보고서 및 프레젠테이션에 적용합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 고객에게 AI 도입의 경제적 가치를 입증하는 영상을 제작합니다. 영상은 데이터시스의 경쟁력과 서비스화(SaaS) 가능성을 강조하며, 고객 신뢰도 향상에 초점을 맞춥니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)",
+      "completedAt": "2026-05-11T20:06:38.966Z"
+    },
+    {
+      "id": "20260512143754-n1zn",
+      "title": "프로젝트 구조 파악",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-12T14:37:54.450Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T14-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T14-16/_report.md\n- Developer: 웹사이트 리디자인 프로젝트를 시작하고, 구축된 Instagram 디자인 시스템을 반영하여 웹사이트 구현 작업을 수행하라.\n\nCEO 종합 요점: 💻 **Developer Mode: Activated**\n🚀 **Task: Implementing Website Redesign (Phase 1: Foundation & Design Tokens)**\n\n현재 프로젝트의 웹사이트 리디자인 작업을 시작합니다. CEO 및 이해관계자가 정의한 디자인 시스템(Design Tokens)을 코드 레벨로 이식하고, 확",
+      "completedAt": "2026-05-12T14:37:55.260Z"
+    },
+    {
+      "id": "20260512143755-0svy",
+      "title": "`tailwind.config.js` (Design Tokens) 설정",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-12T14:37:55.079Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T14-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T14-16/_report.md\n- Developer: 웹사이트 리디자인 프로젝트를 시작하고, 구축된 Instagram 디자인 시스템을 반영하여 웹사이트 구현 작업을 수행하라.\n\nCEO 종합 요점: 💻 **Developer Mode: Activated**\n🚀 **Task: Implementing Website Redesign (Phase 1: Foundation & Design Tokens)**\n\n현재 프로젝트의 웹사이트 리디자인 작업을 시작합니다. CEO 및 이해관계자가 정의한 디자인 시스템(Design Tokens)을 코드 레벨로 이식하고, 확",
+      "completedAt": "2026-05-12T14:37:55.270Z"
+    },
+    {
+      "id": "20260512143755-to91",
+      "title": "`src/components` (Core UI) 구축",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-12T14:37:55.119Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T14-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T14-16/_report.md\n- Developer: 웹사이트 리디자인 프로젝트를 시작하고, 구축된 Instagram 디자인 시스템을 반영하여 웹사이트 구현 작업을 수행하라.\n\nCEO 종합 요점: 💻 **Developer Mode: Activated**\n🚀 **Task: Implementing Website Redesign (Phase 1: Foundation & Design Tokens)**\n\n현재 프로젝트의 웹사이트 리디자인 작업을 시작합니다. CEO 및 이해관계자가 정의한 디자인 시스템(Design Tokens)을 코드 레벨로 이식하고, 확",
+      "completedAt": "2026-05-12T14:37:55.282Z"
+    },
+    {
+      "id": "20260512143755-r62s",
+      "title": "`src/app` (Landing Page) 구현",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-12T14:37:55.124Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T14-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T14-16/_report.md\n- Developer: 웹사이트 리디자인 프로젝트를 시작하고, 구축된 Instagram 디자인 시스템을 반영하여 웹사이트 구현 작업을 수행하라.\n\nCEO 종합 요점: 💻 **Developer Mode: Activated**\n🚀 **Task: Implementing Website Redesign (Phase 1: Foundation & Design Tokens)**\n\n현재 프로젝트의 웹사이트 리디자인 작업을 시작합니다. CEO 및 이해관계자가 정의한 디자인 시스템(Design Tokens)을 코드 레벨로 이식하고, 확",
+      "completedAt": "2026-05-12T14:37:55.308Z"
+    },
+    {
+      "id": "20260512143755-f2nb",
+      "title": "완료 보고 및 검토 요청",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-12T14:37:55.132Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T14-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T14-16/_report.md\n- Developer: 웹사이트 리디자인 프로젝트를 시작하고, 구축된 Instagram 디자인 시스템을 반영하여 웹사이트 구현 작업을 수행하라.\n\nCEO 종합 요점: 💻 **Developer Mode: Activated**\n🚀 **Task: Implementing Website Redesign (Phase 1: Foundation & Design Tokens)**\n\n현재 프로젝트의 웹사이트 리디자인 작업을 시작합니다. CEO 및 이해관계자가 정의한 디자인 시스템(Design Tokens)을 코드 레벨로 이식하고, 확",
+      "completedAt": "2026-05-12T14:37:55.337Z"
+    },
+    {
+      "id": "20260512164949-ha9s",
+      "title": "서비스 페이지 카드",
+      "description": "자동 등록 (Instagram 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "instagram"
+      ],
+      "createdAt": "2026-05-12T16:49:49.101Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T16-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T16-46/_report.md\n- Researcher: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분\n- Instagram: 리디자인된 웹사이트의 주요 부분 스크린샷을 찍고, 이를 바탕으로 사용자 참여도를 높이는 새로운 콘텐츠를 제작하고 인스타그램 피드 및 스토리에 게\n- Designer: 디자인 토큰을 웹사이트 리디자인에 적용하고, 웹사이트의 핵심 컴포넌트와 일관성을 유지한 채 새로운 디자인 요소들을 Instagram 에이전트에게\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분석을 수행하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-12T16:54:35.512Z"
+    },
+    {
+      "id": "20260512164949-cods",
+      "title": "고객사 목록 및 타일",
+      "description": "자동 등록 (Instagram 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "instagram"
+      ],
+      "createdAt": "2026-05-12T16:49:49.105Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T16-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T16-46/_report.md\n- Researcher: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분\n- Instagram: 리디자인된 웹사이트의 주요 부분 스크린샷을 찍고, 이를 바탕으로 사용자 참여도를 높이는 새로운 콘텐츠를 제작하고 인스타그램 피드 및 스토리에 게\n- Designer: 디자인 토큰을 웹사이트 리디자인에 적용하고, 웹사이트의 핵심 컴포넌트와 일관성을 유지한 채 새로운 디자인 요소들을 Instagram 에이전트에게\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분석을 수행하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-12T16:54:35.518Z"
+    },
+    {
+      "id": "20260512165320-y1bc",
+      "title": "LinkedIn 활용, Technical Authority 증명",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-12T16:53:20.526Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T16-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T16-46/_report.md\n- Researcher: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분\n- Instagram: 리디자인된 웹사이트의 주요 부분 스크린샷을 찍고, 이를 바탕으로 사용자 참여도를 높이는 새로운 콘텐츠를 제작하고 인스타그램 피드 및 스토리에 게\n- Designer: 디자인 토큰을 웹사이트 리디자인에 적용하고, 웹사이트의 핵심 컴포넌트와 일관성을 유지한 채 새로운 디자인 요소들을 Instagram 에이전트에게\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분석을 수행하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-12T16:54:35.522Z"
+    },
+    {
+      "id": "20260512165320-37t7",
+      "title": "무료 진단 도구 배포",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-12T16:53:20.530Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T16-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T16-46/_report.md\n- Researcher: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분\n- Instagram: 리디자인된 웹사이트의 주요 부분 스크린샷을 찍고, 이를 바탕으로 사용자 참여도를 높이는 새로운 콘텐츠를 제작하고 인스타그램 피드 및 스토리에 게\n- Designer: 디자인 토큰을 웹사이트 리디자인에 적용하고, 웹사이트의 핵심 컴포넌트와 일관성을 유지한 채 새로운 디자인 요소들을 Instagram 에이전트에게\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분석을 수행하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-12T16:54:35.526Z"
+    },
+    {
+      "id": "20260512165320-zxfq",
+      "title": "Pilot Project 제안",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-12T16:53:20.535Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T16-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T16-46/_report.md\n- Researcher: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분\n- Instagram: 리디자인된 웹사이트의 주요 부분 스크린샷을 찍고, 이를 바탕으로 사용자 참여도를 높이는 새로운 콘텐츠를 제작하고 인스타그램 피드 및 스토리에 게\n- Designer: 디자인 토큰을 웹사이트 리디자인에 적용하고, 웹사이트의 핵심 컴포넌트와 일관성을 유지한 채 새로운 디자인 요소들을 Instagram 에이전트에게\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하고, 이를 기반으로 전체 회사에 이점이 있을 것으로 예상되는 추가 분석을 수행하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-12T16:54:35.533Z"
+    },
+    {
+      "id": "20260512185810-4fai",
+      "title": "브랜드 톤앤매너 및 컬러 팔레트 확정 (Pending)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-12T18:58:10.615Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T18-55",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T18-55/_report.md\n- Designer: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구\n- 레오: 유튜브 채널 영상의 자막 템플릿, 썸네일 디자인, 인트로/아웃로 모션 그래픽을 기획하고 제작하도록 지시합니다.\n- Instagram: 디자이너 에이전트가 검증한 후에 실제 인스타그램 피드 및 스토리 게시물을 제작하고发布합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 ",
+      "completedAt": "2026-05-12T19:01:20.256Z"
+    },
+    {
+      "id": "20260512185810-flrb",
+      "title": "자막 스타일 가이드 제작 (Pending)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-12T18:58:10.641Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T18-55",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T18-55/_report.md\n- Designer: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구\n- 레오: 유튜브 채널 영상의 자막 템플릿, 썸네일 디자인, 인트로/아웃로 모션 그래픽을 기획하고 제작하도록 지시합니다.\n- Instagram: 디자이너 에이전트가 검증한 후에 실제 인스타그램 피드 및 스토리 게시물을 제작하고发布합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 ",
+      "completedAt": "2026-05-12T19:01:20.262Z"
+    },
+    {
+      "id": "20260512185810-o0x5",
+      "title": "썸네일 템플릿 제작 (Pending)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-12T18:58:10.643Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T18-55",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T18-55/_report.md\n- Designer: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구\n- 레오: 유튜브 채널 영상의 자막 템플릿, 썸네일 디자인, 인트로/아웃로 모션 그래픽을 기획하고 제작하도록 지시합니다.\n- Instagram: 디자이너 에이전트가 검증한 후에 실제 인스타그램 피드 및 스토리 게시물을 제작하고发布합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 ",
+      "completedAt": "2026-05-12T19:01:20.266Z"
+    },
+    {
+      "id": "20260512185810-t49v",
+      "title": "인트로/아웃로 모션 에셋 제작 (Pending)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-12T18:58:10.700Z",
+      "status": "done",
+      "sessionDir": "2026-05-12T18-55",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-12T18-55/_report.md\n- Designer: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구\n- 레오: 유튜브 채널 영상의 자막 템플릿, 썸네일 디자인, 인트로/아웃로 모션 그래픽을 기획하고 제작하도록 지시합니다.\n- Instagram: 디자이너 에이전트가 검증한 후에 실제 인스타그램 피드 및 스토리 게시물을 제작하고发布합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 새로운 BrandCard 컴포넌트 디자인 스펙을 정의하고, 기존 디자인 토큰과 일관성을 유지하면서 인스타그램 콘텐츠 메시지를 담을 수 있도록 구성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 ",
+      "completedAt": "2026-05-12T19:01:20.270Z"
+    },
+    {
+      "id": "20260513054308-zuwa",
+      "title": "Designer에게 프로젝트 목표와 메시지를 명확히 설명하고, 인스타그램 콘텐츠 전략에 대한 컨텍스트 제공.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-13T05:43:08.627Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T05-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T05-40/_report.md\n- Business: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n- Designer: 디자이너 에이전트에게 썸네일/포스트 컨셉 3안을 제작하고, 각 컨셉의 장단점을 분석하여 최적의 컨셉을 선정해줄 것을 지시합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 먼저, Busines",
+      "completedAt": "2026-05-13T05:44:50.527Z"
+    },
+    {
+      "id": "20260513054308-5fqn",
+      "title": "인스타그램 콘텐츠 전략을 바탕으로 홍보 캠페인 계획 작성.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-13T05:43:08.638Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T05-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T05-40/_report.md\n- Business: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n- Designer: 디자이너 에이전트에게 썸네일/포스트 컨셉 3안을 제작하고, 각 컨셉의 장단점을 분석하여 최적의 컨셉을 선정해줄 것을 지시합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 먼저, Busines",
+      "completedAt": "2026-05-13T05:44:50.531Z"
+    },
+    {
+      "id": "20260513054308-7zew",
+      "title": "Designer의 결과물 검토 및 피드백 제공.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-13T05:43:08.640Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T05-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T05-40/_report.md\n- Business: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n- Designer: 디자이너 에이전트에게 썸네일/포스트 컨셉 3안을 제작하고, 각 컨셉의 장단점을 분석하여 최적의 컨셉을 선정해줄 것을 지시합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 먼저, Busines",
+      "completedAt": "2026-05-13T05:44:50.534Z"
+    },
+    {
+      "id": "20260513054308-sas5",
+      "title": "Business 에이전트로부터 제공받은 컨텍스트를 바탕으로 적합한 시각적 요소와 썸네일 제작.",
+      "description": "자동 등록 (Business 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-13T05:43:08.641Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T05-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T05-40/_report.md\n- Business: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n- Designer: 디자이너 에이전트에게 썸네일/포스트 컨셉 3안을 제작하고, 각 컨셉의 장단점을 분석하여 최적의 컨셉을 선정해줄 것을 지시합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💰 Business _(Head of Business)_\n> 📋 **지시**: 웹사이트 리디자인 프로젝트에 맞는 인스타그램 콘텐츠 전략을 수립하고, 이를 바탕으로 홍보 캠페인 계획을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 먼저, Busines",
+      "completedAt": "2026-05-13T05:44:50.538Z"
+    },
+    {
+      "id": "20260513091853-tnn9",
+      "title": "Real-time Data Integration (Pending)",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-13T09:18:53.662Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-10",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-10/_report.md\n- Researcher: 최근 트렌드 및 경쟁사 분석결과를 바탕으로 새로운 AI 콘텐츠 전략 및 수익화 전략을 짜고, 이를 CEO에 보고한다.\n- Business: CEO가 제공한 새로운 AI 콘텐츠 전략 및 수익화 전략을 바탕으로 실행 로드맵에 따른 단계별 프로젝트 관리 및 리소스 효율화를 실현하는 작업을\n- Developer: CEO와 Business 에이전트가 제시한 새로운 AI 콘텐츠 전략 및 수익화 전략에 따라, 실제 대시보드 구축 및 자동화 도구 개발을 진행한다\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사 분석결과를 바탕으로 새로운 AI 콘텐츠 전략 및 수익화 전략을 짜고, 이를 CEO에 보고한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **",
+      "completedAt": "2026-05-13T09:19:42.296Z"
+    },
+    {
+      "id": "20260513091853-ifnf",
+      "title": "Automated Data Pipeline (Pending)",
+      "description": "자동 등록 (Developer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-13T09:18:53.667Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-10",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-10/_report.md\n- Researcher: 최근 트렌드 및 경쟁사 분석결과를 바탕으로 새로운 AI 콘텐츠 전략 및 수익화 전략을 짜고, 이를 CEO에 보고한다.\n- Business: CEO가 제공한 새로운 AI 콘텐츠 전략 및 수익화 전략을 바탕으로 실행 로드맵에 따른 단계별 프로젝트 관리 및 리소스 효율화를 실현하는 작업을\n- Developer: CEO와 Business 에이전트가 제시한 새로운 AI 콘텐츠 전략 및 수익화 전략에 따라, 실제 대시보드 구축 및 자동화 도구 개발을 진행한다\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사 분석결과를 바탕으로 새로운 AI 콘텐츠 전략 및 수익화 전략을 짜고, 이를 CEO에 보고한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **",
+      "completedAt": "2026-05-13T09:19:42.303Z"
+    },
+    {
+      "id": "20260513092937-nc3a",
+      "title": "**반복성**: 매주/매일 반복되는 작업인가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:29:37.380Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-25/_report.md\n- Developer: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있\n- Researcher: AI 자동화 체크리스트 및 업무 자동화 프롬프트 템플릿을 작성하고, 이를 바탕으로 Researcher 에이전트가 작성할 수 있는 PDF 파일을 \n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 Developer _(Lead Engineer)_\n> 📋 **지시**: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있도록 하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **",
+      "completedAt": "2026-05-13T09:31:58.889Z"
+    },
+    {
+      "id": "20260513092937-zxtb",
+      "title": "**규칙성**: 명확한 입력(Input)과 출력(Output) 형식이 존재하는가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:29:37.388Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-25/_report.md\n- Developer: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있\n- Researcher: AI 자동화 체크리스트 및 업무 자동화 프롬프트 템플릿을 작성하고, 이를 바탕으로 Researcher 에이전트가 작성할 수 있는 PDF 파일을 \n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 Developer _(Lead Engineer)_\n> 📋 **지시**: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있도록 하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **",
+      "completedAt": "2026-05-13T09:31:58.893Z"
+    },
+    {
+      "id": "20260513092937-95xk",
+      "title": "**디지털화**: 데이터가 텍스트, JSON, CSV 등 디지털 형태로 존재하는가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:29:37.391Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-25/_report.md\n- Developer: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있\n- Researcher: AI 자동화 체크리스트 및 업무 자동화 프롬프트 템플릿을 작성하고, 이를 바탕으로 Researcher 에이전트가 작성할 수 있는 PDF 파일을 \n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 Developer _(Lead Engineer)_\n> 📋 **지시**: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있도록 하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **",
+      "completedAt": "2026-05-13T09:31:58.894Z"
+    },
+    {
+      "id": "20260513092937-770k",
+      "title": "**가치**: 자동화했을 때 절감되는 시간(ROI)이 유의미한가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:29:37.393Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-25/_report.md\n- Developer: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있\n- Researcher: AI 자동화 체크리스트 및 업무 자동화 프롬프트 템플릿을 작성하고, 이를 바탕으로 Researcher 에이전트가 작성할 수 있는 PDF 파일을 \n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 Developer _(Lead Engineer)_\n> 📋 **지시**: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있도록 하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **",
+      "completedAt": "2026-05-13T09:31:58.897Z"
+    },
+    {
+      "id": "20260513092937-089u",
+      "title": "**데이터 접근성**: API, 웹 스크래핑, 또는 파일 읽기가 가능한가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:29:37.396Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-25",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-25/_report.md\n- Developer: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있\n- Researcher: AI 자동화 체크리스트 및 업무 자동화 프롬프트 템플릿을 작성하고, 이를 바탕으로 Researcher 에이전트가 작성할 수 있는 PDF 파일을 \n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 Developer _(Lead Engineer)_\n> 📋 **지시**: auto_planner.py를 업그레이드하여 트렌드 분석 기능과 키워드 설정을 포함하고, LLM 연결이 정상 작동하는지 확인한 후 실행할 수 있도록 하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **",
+      "completedAt": "2026-05-13T09:31:58.899Z"
+    },
+    {
+      "id": "20260513094313-t6zv",
+      "title": "**반복성:** 이 업무가 주기적으로(일간/주간/월간) 발생하는가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:43:13.441Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-40/_report.md\n- Researcher: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: C",
+      "completedAt": "2026-05-13T09:46:05.719Z"
+    },
+    {
+      "id": "20260513094313-ep5g",
+      "title": "**규칙성:** 업무 수행 과정에 명확한 'If-Then' 로직(규칙)이 존재하는가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:43:13.457Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-40/_report.md\n- Researcher: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: C",
+      "completedAt": "2026-05-13T09:46:05.733Z"
+    },
+    {
+      "id": "20260513094313-hkli",
+      "title": "**데이터화:** 업무의 입력값(Input)과 출력값(Output)이 디지털 데이터(텍text, Excel, Email 등)로 존재하는가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:43:13.459Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-40/_report.md\n- Researcher: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: C",
+      "completedAt": "2026-05-13T09:46:05.735Z"
+    },
+    {
+      "id": "20260513094313-egh6",
+      "title": "**예측 가능성:** 업무의 결과가 정해진 규칙 내에서 예측 가능한가?",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:43:13.463Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-40/_report.md\n- Researcher: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: C",
+      "completedAt": "2026-05-13T09:46:05.744Z"
+    },
+    {
+      "id": "20260513094313-7jv7",
+      "title": "**의사결정 복잡도:** 판단에 필요한 변수가 너무 많거나 주관적인 직관이 핵심인가? (낮을수록 좋음)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T09:43:13.465Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T09-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T09-40/_report.md\n- Researcher: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n- Developer: Researcher 에이전트가 작성하는 Markdown 리서치 결과물을 Lead Magnet용(PDF/Clean Markdown)으로 변환하는 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 업무 자동화 체크리스트와 업무 자동화 프롬프트 템플릿을 설계하고, 이를 즉시 다운로드 가능한 PDF 파일로 생성합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: C",
+      "completedAt": "2026-05-13T09:46:05.748Z"
+    },
+    {
+      "id": "20260513194346-rfxo",
+      "title": "**[경쟁사 분석]** 에이전트 기반 자동화 솔루션(예: CrewAI, AutoGPT 활용 기업)의 기능 및 가격 모델 조사.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T19:43:46.091Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T19-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T19-40/_report.md\n- 영숙: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n- Researcher: 회사 목표와 경쟁사 동향 분석을 바탕으로 새로운 트렌드나 기회에 대한 인사이트를 도출하고, 이를 전략적 제언에 반영하기 위한 데이터 준비를 진행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 1. 회사의 목표, 각 에이전트의 개인 목표 ",
+      "completedAt": "2026-05-13T19:44:28.337Z"
+    },
+    {
+      "id": "20260513194346-z6e5",
+      "title": "**[기술 검증]** 마이그레이션된 데이터의 정밀도(Precision)와 AI 응답 정확도 간의 상관관계 수치화 (Case Study 준비).",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T19:43:46.098Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T19-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T19-40/_report.md\n- 영숙: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n- Researcher: 회사 목표와 경쟁사 동향 분석을 바탕으로 새로운 트렌드나 기회에 대한 인사이트를 도출하고, 이를 전략적 제언에 반영하기 위한 데이터 준비를 진행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 1. 회사의 목표, 각 에이전트의 개인 목표 ",
+      "completedAt": "2026-05-13T19:44:28.352Z"
+    },
+    {
+      "id": "20260513194346-2d9b",
+      "title": "**[시장 수요]** 엔터프재 데이터 마이그레이션 시 발생하는 비용/리스크(Downtime)에 대한 산업 평균 데이터 수집.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-13T19:43:46.106Z",
+      "status": "done",
+      "sessionDir": "2026-05-13T19-40",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-13T19-40/_report.md\n- 영숙: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n- Researcher: 회사 목표와 경쟁사 동향 분석을 바탕으로 새로운 트렌드나 기회에 대한 인사이트를 도출하고, 이를 전략적 제언에 반영하기 위한 데이터 준비를 진행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 및 작업 요약을 작성하고, 각 작업을 관련 에이전트에게 효율적으로 분배합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 1. 회사의 목표, 각 에이전트의 개인 목표 ",
+      "completedAt": "2026-05-13T19:44:28.357Z"
+    },
+    {
+      "id": "20260514071840-9yvs",
+      "title": "**Phase 1: 트렌드 및 경쟁사 데이터 확보 (진행 중...)**",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T07:18:40.313Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T07-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T07-16/_report.md\n- 레오: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자\n- Writer: 파악한 트렌드와 신규 콘텐츠 주제를 바탕으로, 영문 스크립트 및 캡션을 작성하여 새로운 영상의 가치를 명확하게 전달할 수 있는 카피라이팅을 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자님의 전문성에 따른 새로운 아이디어를 모아, 한 개의 핵심 주제를 선별하고 해당 주제에 대한 영",
+      "completedAt": "2026-05-14T07:23:30.024Z"
+    },
+    {
+      "id": "20260514071840-1hlc",
+      "title": "Phase 2: 전략 도출 및 주제 선정 (대기)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T07:18:40.319Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T07-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T07-16/_report.md\n- 레오: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자\n- Writer: 파악한 트렌드와 신규 콘텐츠 주제를 바탕으로, 영문 스크립트 및 캡션을 작성하여 새로운 영상의 가치를 명확하게 전달할 수 있는 카피라이팅을 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자님의 전문성에 따른 새로운 아이디어를 모아, 한 개의 핵심 주제를 선별하고 해당 주제에 대한 영",
+      "completedAt": "2026-05-14T07:23:30.028Z"
+    },
+    {
+      "id": "20260514071840-hfmr",
+      "title": "Phase 3: 영상 스크립트 및 썸네일 기획 (대기)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T07:18:40.321Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T07-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T07-16/_report.md\n- 레오: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자\n- Writer: 파악한 트렌드와 신규 콘텐츠 주제를 바탕으로, 영문 스크립트 및 캡션을 작성하여 새로운 영상의 가치를 명확하게 전달할 수 있는 카피라이팅을 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 첫째, 현재 유튜브 채널의 트렌드와 경쟁사 분석을 수행하여 신규 영상 콘텐츠에 맞춰야 할 트렌드를 파악하세요. 둘째, 기존 영상들의 성능과 저자님의 전문성에 따른 새로운 아이디어를 모아, 한 개의 핵심 주제를 선별하고 해당 주제에 대한 영",
+      "completedAt": "2026-05-14T07:23:30.030Z"
+    },
+    {
+      "id": "20260514120853-4yv0",
+      "title": "차기 고객 제안서(Proposal) 템플릿에 'Agentic Workflow' 및 'Multi-Agent System' 개념 반영하기.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-14T12:08:53.947Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T12-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T12-01/_report.md\n- 영숙: 오늘의 일정 확인하고, 다음 작업에 필요한 정보를 수집하세요. 예를 들어, 오늘 예정된 미팅 시간과 참여자, 주요 프로젝트 진행 상황 등을 포함\n- Researcher: 오늘 회사 목표와 관련된 최근 트렌드를 분석하고, 경쟁사 활동을 모니터링합니다. 중요한 데이터와 사실 확인에 도움이 되는 정보를Secretary\n- Writer: 받은 Secretary의 업무 목록과 Researcher로부터 전달된 데이터를 바탕으로, 오늘의 주요 작업을 요약하는 한 편의 글을 쓰고, 회사\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 확인하고, 다음 작업에 필요한 정보를 수집하세요. 예를 들어, 오늘 예정된 미팅 시간과 참여자, 주요 프로젝트 진행 상황 등을 포함하도록 할일 목록을 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-14T12:10:56.424Z"
+    },
+    {
+      "id": "20260514120853-k8k0",
+      "title": "고객사 미팅 시 'AI 에이전트 도입을 통한 업무 프로세스 자동화(RPA 2.0)' 사례 준비하기.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-14T12:08:53.975Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T12-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T12-01/_report.md\n- 영숙: 오늘의 일정 확인하고, 다음 작업에 필요한 정보를 수집하세요. 예를 들어, 오늘 예정된 미팅 시간과 참여자, 주요 프로젝트 진행 상황 등을 포함\n- Researcher: 오늘 회사 목표와 관련된 최근 트렌드를 분석하고, 경쟁사 활동을 모니터링합니다. 중요한 데이터와 사실 확인에 도움이 되는 정보를Secretary\n- Writer: 받은 Secretary의 업무 목록과 Researcher로부터 전달된 데이터를 바탕으로, 오늘의 주요 작업을 요약하는 한 편의 글을 쓰고, 회사\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 확인하고, 다음 작업에 필요한 정보를 수집하세요. 예를 들어, 오늘 예정된 미팅 시간과 참여자, 주요 프로젝트 진행 상황 등을 포함하도록 할일 목록을 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM ",
+      "completedAt": "2026-05-14T12:10:56.426Z"
+    },
+    {
+      "id": "20260514180329-yrtl",
+      "title": "위 전략에 기반한 11월 콘텐츠 캘린더 초안 작성 (Task: Content Planner)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-14T18:03:29.309Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T18-00",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T18-00/_report.md\n- 레오: 현재 유튜브 채널의 조회수, 구독자 수, 비디오 조회, 평균 지속 시간 등을 확인하고 전체적인 성능 평가 후 약간의 개선 방향을 제시하세요.\n- Researcher: 유튜브 트렌드 및 경쟁사의 최신 분석 결과를 통해 현재 채널 활동에 대해 추가 정보 수집 및 요약해주고, 이를 기반으로 유튜브 전략 개선에 도움\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 현재 유튜브 채널의 조회수, 구독자 수, 비디오 조회, 평균 지속 시간 등을 확인하고 전체적인 성능 평가 후 약간의 개선 방향을 제시하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-05-14T18:04:19.243Z"
+    },
+    {
+      "id": "20260514180329-tysz",
+      "title": "자동화 구축 사례(Case Study) 1순위 주제 선정 (Task: Researcher)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-14T18:03:29.326Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T18-00",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T18-00/_report.md\n- 레오: 현재 유튜브 채널의 조회수, 구독자 수, 비디오 조회, 평균 지속 시간 등을 확인하고 전체적인 성능 평가 후 약간의 개선 방향을 제시하세요.\n- Researcher: 유튜브 트렌드 및 경쟁사의 최신 분석 결과를 통해 현재 채널 활동에 대해 추가 정보 수집 및 요약해주고, 이를 기반으로 유튜브 전략 개선에 도움\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 현재 유튜브 채널의 조회수, 구독자 수, 비디오 조회, 평균 지속 시간 등을 확인하고 전체적인 성능 평가 후 약간의 개선 방향을 제시하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-05-14T18:04:19.253Z"
+    },
+    {
+      "id": "20260514192102-n8fw",
+      "title": "승인 (Proceed)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T19:21:02.214Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T19-15",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T19-15/_report.md\n- 영숙: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n- Writer: 회사의 최근 의사결정 및 메모리를 검토하여, 현재 가장 중요시 여겨야 할 단일 작업을 정리하고, 간결하게 설명한 후 스크립트로 작성해주세요. 이\n- 레오: 회사 목표와 1인 기업의 특성을 고려하여, 이번주 내에 진행해야 할 유익한 영상 기획 및 콘텐츠 제작을 정하고, 구체적이고 실행 가능한 계획을 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: [결정] 오늘의 주요 작업",
+      "completedAt": "2026-05-14T19:23:39.757Z"
+    },
+    {
+      "id": "20260514192102-wma6",
+      "title": "수정 지시 (Revise)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T19:21:02.240Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T19-15",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T19-15/_report.md\n- 영숙: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n- Writer: 회사의 최근 의사결정 및 메모리를 검토하여, 현재 가장 중요시 여겨야 할 단일 작업을 정리하고, 간결하게 설명한 후 스크립트로 작성해주세요. 이\n- 레오: 회사 목표와 1인 기업의 특성을 고려하여, 이번주 내에 진행해야 할 유익한 영상 기획 및 콘텐츠 제작을 정하고, 구체적이고 실행 가능한 계획을 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: [결정] 오늘의 주요 작업",
+      "completedAt": "2026-05-14T19:23:39.764Z"
+    },
+    {
+      "id": "20260514192102-5hkd",
+      "title": "보류 (Hold)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T19:21:02.254Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T19-15",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T19-15/_report.md\n- 영숙: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n- Writer: 회사의 최근 의사결정 및 메모리를 검토하여, 현재 가장 중요시 여겨야 할 단일 작업을 정리하고, 간결하게 설명한 후 스크립트로 작성해주세요. 이\n- 레오: 회사 목표와 1인 기업의 특성을 고려하여, 이번주 내에 진행해야 할 유익한 영상 기획 및 콘텐츠 제작을 정하고, 구체적이고 실행 가능한 계획을 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 주요 일정과 미팅을 확인하고, 필요하다면 새로운 일정을 추가하여 오늘의 업무를 효율적으로 관리해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: [결정] 오늘의 주요 작업",
+      "completedAt": "2026-05-14T19:23:39.775Z"
+    },
+    {
+      "id": "20260514234802-smp5",
+      "title": "분석 대상 AI 기술의 최신 업데이트 기능 리서치",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T23:48:02.857Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T23-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T23-45/_report.md\n- 레오: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n- 코다리: 기밀 프로젝트의 핵심 기능인 AI 기술을 기반으로 한 새로운 알고리즘을 구현하고, 이를 새로운 영상 콘텐츠에 통합하는데 필요한 코드를 작성해주세\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **",
+      "completedAt": "2026-05-14T23:51:10.426Z"
+    },
+    {
+      "id": "20260514234802-3sfc",
+      "title": "기술 시연을 위한 'Killer Prompt' 리스트 작성",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T23:48:02.880Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T23-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T23-45/_report.md\n- 레오: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n- 코다리: 기밀 프로젝트의 핵심 기능인 AI 기술을 기반으로 한 새로운 알고리즘을 구현하고, 이를 새로운 영상 콘텐츠에 통합하는데 필요한 코드를 작성해주세\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **",
+      "completedAt": "2026-05-14T23:51:10.430Z"
+    },
+    {
+      "id": "20260514234802-ibry",
+      "title": "배경 음악(BGM) 및 효과음(SFX) 라이브러리 확보",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T23:48:02.892Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T23-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T23-45/_report.md\n- 레오: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n- 코다리: 기밀 프로젝트의 핵심 기능인 AI 기술을 기반으로 한 새로운 알고리즘을 구현하고, 이를 새로운 영상 콘텐츠에 통합하는데 필요한 코드를 작성해주세\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **",
+      "completedAt": "2026-05-14T23:51:10.439Z"
+    },
+    {
+      "id": "20260514234802-pxk6",
+      "title": "AI 도구를 활용하여 스토리보드에 맞는 영상 소스(B-roll) 생성",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T23:48:02.897Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T23-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T23-45/_report.md\n- 레오: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n- 코다리: 기밀 프로젝트의 핵심 기능인 AI 기술을 기반으로 한 새로운 알고리즘을 구현하고, 이를 새로운 영상 콘텐츠에 통합하는데 필요한 코드를 작성해주세\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **",
+      "completedAt": "2026-05-14T23:51:10.447Z"
+    },
+    {
+      "id": "20260514234802-beot",
+      "title": "프리미어 프로/다빈치 리졸브를 활용한 컷 편집",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-14T23:48:02.905Z",
+      "status": "done",
+      "sessionDir": "2026-05-14T23-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-14T23-45/_report.md\n- 레오: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n- 코다리: 기밀 프로젝트의 핵심 기능인 AI 기술을 기반으로 한 새로운 알고리즘을 구현하고, 이를 새로운 영상 콘텐츠에 통합하는데 필요한 코드를 작성해주세\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 주에 런칭 예정인 새로운 AI 기술을 활용한 영상 콘텐츠를 구체적으로 기획하고, 스토리보드와 함께 기본 동영상 스크립트를 작성하세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **",
+      "completedAt": "2026-05-14T23:51:10.455Z"
+    },
+    {
+      "id": "20260516123632-ml3j",
+      "title": "**Step 1:** 구체적인 'Approval-based' 워크플로우 프로토타입 설계 (Next Week)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-16T12:36:32.172Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T12-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T12-34/_report.md\n- Researcher: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n- 현빈: 효율성과 효과성을 개선할 수익화 전략 및 비즈니스 전략 개발, KPI 설정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **상태:** 진행 중 (In Pr",
+      "completedAt": "2026-05-16T12:39:03.385Z"
+    },
+    {
+      "id": "20260516123632-wvo7",
+      "title": "**Step 2:** 하이브리드 모델(Small/Large LLM) 적용 시 비용 대비 성능(ROI) 시뮬레이션 수행 (2 Weeks Later)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-16T12:36:32.195Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T12-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T12-34/_report.md\n- Researcher: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n- 현빈: 효율성과 효과성을 개선할 수익화 전략 및 비즈니스 전략 개발, KPI 설정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **상태:** 진행 중 (In Pr",
+      "completedAt": "2026-05-16T12:39:03.388Z"
+    },
+    {
+      "id": "20260516123632-xwgg",
+      "title": "**Step 3:** 특정 버티컬(예: 1인 콘텐츠 크리에이터) 타겟 MVP 개발 착수 (1 Month Later)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-16T12:36:32.200Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T12-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T12-34/_report.md\n- Researcher: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n- 현빈: 효율성과 효과성을 개선할 수익화 전략 및 비즈니스 전략 개발, KPI 설정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 1인 기업 24시간 연속 작업의 트렌드와 경쟁사 분석 수행, 데이터 수집 후 요약 보고\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **상태:** 진행 중 (In Pr",
+      "completedAt": "2026-05-16T12:39:03.393Z"
+    },
+    {
+      "id": "20260516162144-kto3",
+      "title": "회사 블로그 포스트 초안 작성 (2026-05-16)",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-16T16:21:44.290Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T16-19",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T16-19/_report.md\n- Writer: 새로운 회사 블로그 포스트를 작성하여 이 회사의 최근 성과와 미래 계획을 소개하라.\n\nCEO 종합 요점: ### 회사 블로그 포스트 작성 지시\n\n#### 주제: 회사의 최근 성과와 미래 계획 소개\n\n**작업 설명:** \n회사 블로그를 통해 최신 업데이트된 성과와 앞으로의 전략을 고객에게 알리는 포스트를 작성해야 합니다. 이 포스트는 사용자들에게 우리의 진행 상황과 향후 계획을 이해할 수 있도록 명확하고 직관적인 내용을 담아야 합니다.\n\n**포스트 구성:**\n1",
+      "completedAt": "2026-05-16T16:21:44.316Z"
+    },
+    {
+      "id": "20260516162144-wh0d",
+      "title": "최근 성과 및 앞으로의 계획 관련 정보 수집 (2026-05-16)",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-16T16:21:44.297Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T16-19",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T16-19/_report.md\n- Writer: 새로운 회사 블로그 포스트를 작성하여 이 회사의 최근 성과와 미래 계획을 소개하라.\n\nCEO 종합 요점: ### 회사 블로그 포스트 작성 지시\n\n#### 주제: 회사의 최근 성과와 미래 계획 소개\n\n**작업 설명:** \n회사 블로그를 통해 최신 업데이트된 성과와 앞으로의 전략을 고객에게 알리는 포스트를 작성해야 합니다. 이 포스트는 사용자들에게 우리의 진행 상황과 향후 계획을 이해할 수 있도록 명확하고 직관적인 내용을 담아야 합니다.\n\n**포스트 구성:**\n1",
+      "completedAt": "2026-05-16T16:21:44.322Z"
+    },
+    {
+      "id": "20260517153655-0el7",
+      "title": "1인 기업의 비전과 가치를 분석",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T15:36:55.017Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T15-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T15-34/_report.md\n- Writer: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n- Designer: 새로운 브랜드 비주얼 및 타이포그래피를 디자인하여, 창조적이고 인상적인 기업 정체성을 나타낸다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **작업:** 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창",
+      "completedAt": "2026-05-17T15:38:37.852Z"
+    },
+    {
+      "id": "20260517153655-wjpm",
+      "title": "스토리 초안 작성",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T15:36:55.031Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T15-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T15-34/_report.md\n- Writer: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n- Designer: 새로운 브랜드 비주얼 및 타이포그래피를 디자인하여, 창조적이고 인상적인 기업 정체성을 나타낸다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **작업:** 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창",
+      "completedAt": "2026-05-17T15:38:37.856Z"
+    },
+    {
+      "id": "20260517153655-z9qq",
+      "title": "슬로건 및 태그라인 제안",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T15:36:55.034Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T15-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T15-34/_report.md\n- Writer: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n- Designer: 새로운 브랜드 비주얼 및 타이포그래피를 디자인하여, 창조적이고 인상적인 기업 정체성을 나타낸다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **작업:** 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창",
+      "completedAt": "2026-05-17T15:38:37.859Z"
+    },
+    {
+      "id": "20260517153655-2q4t",
+      "title": "브랜딩 스토리 시각화 계획",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T15:36:55.037Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T15-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T15-34/_report.md\n- Writer: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n- Designer: 새로운 브랜드 비주얼 및 타이포그래피를 디자인하여, 창조적이고 인상적인 기업 정체성을 나타낸다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **작업:** 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창",
+      "completedAt": "2026-05-17T15:38:37.863Z"
+    },
+    {
+      "id": "20260517153655-53f5",
+      "title": "로고 및 그래픽 요소 제안",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T15:36:55.039Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T15-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T15-34/_report.md\n- Writer: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n- Designer: 새로운 브랜드 비주얼 및 타이포그래피를 디자인하여, 창조적이고 인상적인 기업 정체성을 나타낸다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창적인 슬로건과 태그라인을 구체화한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **작업:** 1인 기업의 새로운 브랜딩 스토리를 작성하고, 독창",
+      "completedAt": "2026-05-17T15:38:37.866Z"
+    },
+    {
+      "id": "20260517203802-87zq",
+      "title": "포스트의 정보가 정확하고 최신 상태인지 확인.",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T20:38:02.457Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T20-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T20-34/_report.md\n- Researcher: 2026년 5월 17일까지 트렌드 및 경쟁사 분석을 수행하고, 데이터를 수집하며 요약된 결과를 보고서 작성하세요.\n- Writer: 카피라이팅과 영상 스크립트를 기반으로 회사 목표와 에이전트 개인 목표를 통합한 내용을 작성하고, 블로그에 게시할 가치 있는 콘텐츠로 변환하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2026년 5월 17일까지 트렌드 및 경쟁사 분석을 수행하고, 데이터를 수집하며 요약된 결과를 보고서 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신",
+      "completedAt": "2026-05-17T20:38:49.345Z"
+    },
+    {
+      "id": "20260517203802-pkma",
+      "title": "내용이 이해하기 쉽고 전문적이도록 편집 완료.",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-17T20:38:02.464Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T20-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T20-34/_report.md\n- Researcher: 2026년 5월 17일까지 트렌드 및 경쟁사 분석을 수행하고, 데이터를 수집하며 요약된 결과를 보고서 작성하세요.\n- Writer: 카피라이팅과 영상 스크립트를 기반으로 회사 목표와 에이전트 개인 목표를 통합한 내용을 작성하고, 블로그에 게시할 가치 있는 콘텐츠로 변환하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2026년 5월 17일까지 트렌드 및 경쟁사 분석을 수행하고, 데이터를 수집하며 요약된 결과를 보고서 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신",
+      "completedAt": "2026-05-17T20:38:49.349Z"
+    },
+    {
+      "id": "20260522220221-b299",
+      "title": "**2023 KPI Dashboard** (정량적 성과 지표)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-22T22:02:21.247Z",
+      "status": "done",
+      "sessionDir": "2026-05-22T22-00",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-22T22-00/_report.md\n- Researcher: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n- 현빈: 2023년도 업무 성과에 따른 2024년 전략 계획 수립\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **지시 사항:** 2023년도 주요 성과(KPI) 및 ",
+      "completedAt": "2026-05-22T22:05:07.589Z"
+    },
+    {
+      "id": "20260522220221-hwtq",
+      "title": "**Bottleneck Log** (자동화가 필요한 수동 작업 리스트)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-22T22:02:21.259Z",
+      "status": "done",
+      "sessionDir": "2026-05-22T22-00",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-22T22-00/_report.md\n- Researcher: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n- 현빈: 2023년도 업무 성과에 따른 2024년 전략 계획 수립\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **지시 사항:** 2023년도 주요 성과(KPI) 및 ",
+      "completedAt": "2026-05-22T22:05:07.598Z"
+    },
+    {
+      "id": "20260522220221-towx",
+      "title": "**Strategic Implication Report** (과거의 한계 $\\rightarrow$ 현재의 AI 전략 연결 보고서)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-22T22:02:21.265Z",
+      "status": "done",
+      "sessionDir": "2026-05-22T22-00",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-22T22-00/_report.md\n- Researcher: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n- 현빈: 2023년도 업무 성과에 따른 2024년 전략 계획 수립\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년도 1인 기업의 주요 성과 및 과제 데이터 수집 및 분석\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **지시 사항:** 2023년도 주요 성과(KPI) 및 ",
+      "completedAt": "2026-05-22T22:05:07.603Z"
+    },
+    {
+      "id": "20260526140754-asr2",
+      "title": "특정 도메인(예: 프리미어리그 데이터 분석) 선정.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-26T14:07:54.398Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T14-04",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T14-04/_report.md\n- 레오: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n- Researcher: 데이터 기반의 트렌드 및 경쟁사 연구를 수행하며, 유튜브의 시장 현황을 파악할 예정입니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 AP",
+      "completedAt": "2026-05-26T14:08:33.277Z"
+    },
+    {
+      "id": "20260526140754-vwoe",
+      "title": "분석에 사용할 데이터셋(Dataset) 확보 및 전처리 프로세스 수립.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-26T14:07:54.404Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T14-04",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T14-04/_report.md\n- 레오: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n- Researcher: 데이터 기반의 트렌드 및 경쟁사 연구를 수행하며, 유튜브의 시장 현황을 파악할 예정입니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 AP",
+      "completedAt": "2026-05-26T14:08:33.284Z"
+    },
+    {
+      "id": "20260526140754-z9pc",
+      "title": "초기 3분 분량의 'Teaser' 영상 제작 (Shorts 활용).",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-26T14:07:54.408Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T14-04",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T14-04/_report.md\n- 레오: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n- Researcher: 데이터 기반의 트렌드 및 경쟁사 연구를 수행하며, 유튜브의 시장 현황을 파악할 예정입니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 이번 작업으로는 내 유튜브 채널의 최근 동영상 분석 및 최적화를 진행하겠습니다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 AP",
+      "completedAt": "2026-05-26T14:08:33.288Z"
+    },
+    {
+      "id": "20260526163217-3myn",
+      "title": "**기존 워크플로우 역공학:** 현재 수동으로 진행되는 편집 단계(컷 편집, 자막 삽입, 효과음)를 세분화하여 데이터화.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-26T16:32:17.281Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T16-29",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T16-29/_report.md\n- 레오: 새로운 영상 시리즈 concept 및 스토리보드 작성\n- 코다리: 기존 영상 편집 플로우를 기반으로 새로운 시리즈에 맞는 자동화 스크립트 및 API 통합 작업 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 시리즈 concept 및 스토리보드 작성\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이터) _(exit 1",
+      "completedAt": "2026-05-26T16:32:51.601Z"
+    },
+    {
+      "id": "20260526163217-so5b",
+      "title": "**기술 스택 확정:** Python(MoviePy 또는 FFmpeg), OpenAI API (스크립트 생성), YouTube Data API (업로드) 선정.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-26T16:32:17.290Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T16-29",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T16-29/_report.md\n- 레오: 새로운 영상 시리즈 concept 및 스토리보드 작성\n- 코다리: 기존 영상 편집 플로우를 기반으로 새로운 시리즈에 맞는 자동화 스크립트 및 API 통합 작업 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 시리즈 concept 및 스토리보드 작성\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이터) _(exit 1",
+      "completedAt": "2026-05-26T16:32:51.606Z"
+    },
+    {
+      "id": "20260526163217-dz8f",
+      "title": "**데이터 흐름 설계:** `Text(Script) ➔ Audio(TTS) ➔ Video(Assets) ➔ Assembly(MoviePy) ➔ Upload(YouTube)` 파이프라인 설계.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-26T16:32:17.295Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T16-29",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T16-29/_report.md\n- 레오: 새로운 영상 시리즈 concept 및 스토리보드 작성\n- 코다리: 기존 영상 편집 플로우를 기반으로 새로운 시리즈에 맞는 자동화 스크립트 및 API 통합 작업 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 시리즈 concept 및 스토리보드 작성\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이터) _(exit 1",
+      "completedAt": "2026-05-26T16:32:51.609Z"
+    },
+    {
+      "id": "20260526163217-omdx",
+      "title": "**Module A: Script & Metadata Generator**",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-26T16:32:17.298Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T16-29",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T16-29/_report.md\n- 레오: 새로운 영상 시리즈 concept 및 스토리보드 작성\n- 코다리: 기존 영상 편집 플로우를 기반으로 새로운 시리즈에 맞는 자동화 스크립트 및 API 통합 작업 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 시리즈 concept 및 스토리보드 작성\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이터) _(exit 1",
+      "completedAt": "2026-05-26T16:32:51.611Z"
+    },
+    {
+      "id": "20260526163217-ry9m",
+      "title": "**Module B: Audio Synthesis (TTS) Engine**",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-26T16:32:17.300Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T16-29",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T16-29/_report.md\n- 레오: 새로운 영상 시리즈 concept 및 스토리보드 작성\n- 코다리: 기존 영상 편집 플로우를 기반으로 새로운 시리즈에 맞는 자동화 스크립트 및 API 통합 작업 수행\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 시리즈 concept 및 스토리보드 작성\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 API 데이터) _(exit 1",
+      "completedAt": "2026-05-26T16:32:51.613Z"
+    },
+    {
+      "id": "20260526224236-1uk9",
+      "title": "블로그 포스트 본문 작성 중: 90%",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-26T22:42:36.784Z",
+      "status": "done",
+      "sessionDir": "2026-05-26T22-39",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-26T22-39/_report.md\n- Researcher: 최근 트렌드와 경쟁사 분석 후, 1인 기업의 주요 강점과 구별할 수 있는 특성을 파악하고 제안하세요.\n- Writer: 전체적인 회사 메시지가 어떤 것인지 간결하게 설명한 카피를 작성해주세요. 이를 기반으로 1인 기업의 비즈니스 모델과 차별화된 selling po\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드와 경쟁사 분석 후, 1인 기업의 주요 강점과 구별할 수 있는 특성을 파악하고 제안하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 지시는 **Res",
+      "completedAt": "2026-05-26T22:43:28.449Z"
+    },
+    {
+      "id": "20260527052758-f70i",
+      "title": "Researcher가 분석한 **'콘텐츠 승리 공식(Winning Formula)'**이 문서화되었는가?",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-27T05:27:58.752Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T05-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T05-24/_report.md\n- Researcher: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n- 레오: 식별된 최우선 작업에 대한 실행 가능한 한국어 지시를 작성하고 수행합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ",
+      "completedAt": "2026-05-27T05:28:38.945Z"
+    },
+    {
+      "id": "20260527052758-64ex",
+      "title": "Leo가 해당 가이드라인을 적용한 **'실험적 영상 기획안'**을 1건 이상 도출하였는가?",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-27T05:27:58.765Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T05-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T05-24/_report.md\n- Researcher: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n- 레오: 식별된 최우선 작업에 대한 실행 가능한 한국어 지시를 작성하고 수행합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ",
+      "completedAt": "2026-05-27T05:28:38.951Z"
+    },
+    {
+      "id": "20260527052758-rc1n",
+      "title": "두 에이전트의 산출물이 서로 연결되어 **'데이터 $\\rightarrow$ 전략 $\\rightarrow$ 실행'**의 흐름을 완성하였는가?",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-27T05:27:58.771Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T05-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T05-24/_report.md\n- Researcher: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n- 레오: 식별된 최우선 작업에 대한 실행 가능한 한국어 지시를 작성하고 수행합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 회사 목표와 각 에이전트의 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업을 식별하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ",
+      "completedAt": "2026-05-27T05:28:38.957Z"
+    },
+    {
+      "id": "20260527061244-8727",
+      "title": "본 가이드라인을 팀 위키(Confluence/Notion)에 등록",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-27T06:12:44.827Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T06-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T06-09/_report.md\n- Writer: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n- 코다리: 개발자로서 팀워크 향상의 가치를 이해하고, 코드 리뷰 및 협업 과정에서의 효과적인 의사소통 방식을 개선하는 프로세스를 개발해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **Writer (Copywr",
+      "completedAt": "2026-05-27T06:13:48.405Z"
+    },
+    {
+      "id": "20260527061244-qpkv",
+      "title": "다음 주 주간 회의에서 도입 시점 논의",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-27T06:12:44.834Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T06-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T06-09/_report.md\n- Writer: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n- 코다리: 개발자로서 팀워크 향상의 가치를 이해하고, 코드 리뷰 및 협업 과정에서의 효과적인 의사소통 방식을 개선하는 프로세스를 개발해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **Writer (Copywr",
+      "completedAt": "2026-05-27T06:13:48.409Z"
+    },
+    {
+      "id": "20260527061244-6elq",
+      "title": "GitHub PR 템플릿에 'Impact' 및 'Testing' 섹션 추가 적용",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-27T06:12:44.839Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T06-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T06-09/_report.md\n- Writer: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n- 코다리: 개발자로서 팀워크 향상의 가치를 이해하고, 코드 리뷰 및 협업 과정에서의 효과적인 의사소통 방식을 개선하는 프로세스를 개발해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 각 에이전트의 목표와 성격을 간결하게 설명하고, 이에 따른 개인적인 동기 부여 및 팀워크 향상을 위한 제안을 작성해주세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **Writer (Copywr",
+      "completedAt": "2026-05-27T06:13:48.413Z"
+    },
+    {
+      "id": "20260527135721-qdxx",
+      "title": "P0 과제(파일 출력형 에이전트) 개발을 위한 개발 리소스(Developer) 배정 승인.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-27T13:57:21.386Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T13-54",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T13-54/_report.md\n- Researcher: 최근 트렌드 및 경쟁사의 분석을 수행하고, 이를 바탕으로 회사에 유익한 정보와 아이디어를 제공하세요.\n- 코다리: 현재 시스템의 잠재적 개선사항과 효율성을 높이는 방법을 조사한 후, 적절한 코드 변경 및 업데이트를 실행하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사의 분석을 수행하고, 이를 바탕으로 회사에 유익한 정보와 아이디어를 제공하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신:** CEO",
+      "completedAt": "2026-05-27T13:58:39.560Z"
+    },
+    {
+      "id": "20260527135721-ff5b",
+      "title": "멀티모달 기능 테스트를 위한 API 사용 예산(Token Budget) 승인.",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-27T13:57:21.395Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T13-54",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T13-54/_report.md\n- Researcher: 최근 트렌드 및 경쟁사의 분석을 수행하고, 이를 바탕으로 회사에 유익한 정보와 아이디어를 제공하세요.\n- 코다리: 현재 시스템의 잠재적 개선사항과 효율성을 높이는 방법을 조사한 후, 적절한 코드 변경 및 업데이트를 실행하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사의 분석을 수행하고, 이를 바탕으로 회사에 유익한 정보와 아이디어를 제공하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신:** CEO",
+      "completedAt": "2026-05-27T13:58:39.563Z"
+    },
+    {
+      "id": "20260527204230-bbdo",
+      "title": "Researcher로부터 최종 보고서의 검토 및 수정 요청 받기",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-27T20:42:30.559Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T20-39",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T20-39/_report.md\n- Researcher: 최근 경쟁사의 트렌드 및 데이터를 수집하고 요약한 후, 이를 바탕으로 1인 기업의 미래 시장 기회를 분석하세요.\n- Writer: 연구자의 결과를 기반으로, 1인 기업의 브랜드 가치와 전략을 강조하는 간결하고 유혹적인 카피라이팅을 작성하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 경쟁사의 트렌드 및 데이터를 수집하고 요약한 후, 이를 바탕으로 1인 기업의 미래 시장 기회를 분석하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 지시는",
+      "completedAt": "2026-05-27T20:43:02.417Z"
+    },
+    {
+      "id": "20260527204230-988h",
+      "title": "Researcher와 협업하여 최종 보고서 작성 및 개선하기",
+      "description": "자동 등록 (Writer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "writer"
+      ],
+      "createdAt": "2026-05-27T20:42:30.565Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T20-39",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T20-39/_report.md\n- Researcher: 최근 경쟁사의 트렌드 및 데이터를 수집하고 요약한 후, 이를 바탕으로 1인 기업의 미래 시장 기회를 분석하세요.\n- Writer: 연구자의 결과를 기반으로, 1인 기업의 브랜드 가치와 전략을 강조하는 간결하고 유혹적인 카피라이팅을 작성하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 경쟁사의 트렌드 및 데이터를 수집하고 요약한 후, 이를 바탕으로 1인 기업의 미래 시장 기회를 분석하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 이 지시는",
+      "completedAt": "2026-05-27T20:43:02.419Z"
+    },
+    {
+      "id": "20260527221146-g6az",
+      "title": "1순위: 차기 영상 주제 'Local LLM 구축 가이드' 스크립트 작성 착수",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-27T22:11:46.263Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T22-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T22-09/_report.md\n- 레오: 2023년 5월 27일에 업로드된 최근 영상과 함께, 유튜브 채널의 트렌드를 파악하고, 주요 경쟁사들의 채널 동향도 분석해보세요.\n- Researcher: YouTube 채널 및 경쟁사의 트렌드와 동향에 대한 데이터를 수집하고 요약하세요. 이를 통해 1인 AI 기업의 유튜브 전략을 개선하는 데 도움\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 2023년 5월 27일에 업로드된 최근 영상과 함께, 유튜브 채널의 트렌드를 파악하고, 주요 경쟁사들의 채널 동향도 분석해보세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이",
+      "completedAt": "2026-05-27T22:12:33.605Z"
+    },
+    {
+      "id": "20260527221146-2x9b",
+      "title": "2순위: 썸네일 디자인 팀에 '결과 중심적' 레이아웃 가이드 전달",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-05-27T22:11:46.267Z",
+      "status": "done",
+      "sessionDir": "2026-05-27T22-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-27T22-09/_report.md\n- 레오: 2023년 5월 27일에 업로드된 최근 영상과 함께, 유튜브 채널의 트렌드를 파악하고, 주요 경쟁사들의 채널 동향도 분석해보세요.\n- Researcher: YouTube 채널 및 경쟁사의 트렌드와 동향에 대한 데이터를 수집하고 요약하세요. 이를 통해 1인 AI 기업의 유튜브 전략을 개선하는 데 도움\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 2023년 5월 27일에 업로드된 최근 영상과 함께, 유튜브 채널의 트렌드를 파악하고, 주요 경쟁사들의 채널 동향도 분석해보세요.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이",
+      "completedAt": "2026-05-27T22:12:33.608Z"
+    },
+    {
+      "id": "20260529055718-7vhi",
+      "title": "**Run Implementation (Pending)**",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-29T05:57:18.988Z",
+      "status": "done",
+      "sessionDir": "2026-05-29T05-53",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-29T05-53/_report.md\n- 코다리: 자율 사이클 프로그램을 수정하여, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정을 검토하고 메모리를 확인하여 \n\nCEO 종합 요점: 이 요청은 단순한 작업 수행이 아니라, **'자율적 의사결정 엔진(Autonomous Decision Engine)'**의 로직을 설계하고 실행하라는 고차원적인 명령입니다.\n\nCEO님의 명령에 따라, 저는 단순히 주어진 태스크를 처리하는 것을 넘어, **[상태 분석 $\\rightarrow$ 우선순위 결정 $\\rightarrow$ 실행 계획 수립 $\\righ",
+      "completedAt": "2026-05-29T05:57:19.023Z"
+    },
+    {
+      "id": "20260531061741-wlfp",
+      "title": "`Next.js` 프로젝트 초기화 및 `Tailwind/Shadcn/UI` 환경 구축",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T06:17:41.416Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-16/_report.md\n- 코다리: 새 웹 사이트 템플릿 구현하기\n\nCEO 종합 요점: 현재 사용자의 요청은 **\"새로운 웹사이트 템플릿 구현\"**에 대한 것으로, 이는 단순한 코드 작성을 넘어 **[Packaged Product]**로서의 가치를 지녀야 합니다.\n\n저는 `Developer`로서, 단순히 HTML/CSS를 짜는 것이 아니라, 이미 검증된 **`Dashboard(Admin)`, `Landing Page(Marketing)`, `",
+      "completedAt": "2026-05-31T06:17:41.459Z"
+    },
+    {
+      "id": "20260531061741-sqk9",
+      "title": "공통 컴포넌트(Button, Input, Card, Modal) 라이브러리화",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T06:17:41.432Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-16/_report.md\n- 코다리: 새 웹 사이트 템플릿 구현하기\n\nCEO 종합 요점: 현재 사용자의 요청은 **\"새로운 웹사이트 템플릿 구현\"**에 대한 것으로, 이는 단순한 코드 작성을 넘어 **[Packaged Product]**로서의 가치를 지녀야 합니다.\n\n저는 `Developer`로서, 단순히 HTML/CSS를 짜는 것이 아니라, 이미 검증된 **`Dashboard(Admin)`, `Landing Page(Marketing)`, `",
+      "completedAt": "2026-05-31T06:17:41.462Z"
+    },
+    {
+      "id": "20260531061741-qwec",
+      "title": "`Theme Engine` 구현 (Light/Dark/High-Contrast 모드)",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T06:17:41.437Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-16/_report.md\n- 코다리: 새 웹 사이트 템플릿 구현하기\n\nCEO 종합 요점: 현재 사용자의 요청은 **\"새로운 웹사이트 템플릿 구현\"**에 대한 것으로, 이는 단순한 코드 작성을 넘어 **[Packaged Product]**로서의 가치를 지녀야 합니다.\n\n저는 `Developer`로서, 단순히 HTML/CSS를 짜는 것이 아니라, 이미 검증된 **`Dashboard(Admin)`, `Landing Page(Marketing)`, `",
+      "completedAt": "2026-05-31T06:17:41.466Z"
+    },
+    {
+      "id": "20260531061741-jl76",
+      "title": "**NEXUS-ADMIN** 레이아웃 및 차트 컴포넌트 구현",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T06:17:41.440Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-16/_report.md\n- 코다리: 새 웹 사이트 템플릿 구현하기\n\nCEO 종합 요점: 현재 사용자의 요청은 **\"새로운 웹사이트 템플릿 구현\"**에 대한 것으로, 이는 단순한 코드 작성을 넘어 **[Packaged Product]**로서의 가치를 지녀야 합니다.\n\n저는 `Developer`로서, 단순히 HTML/CSS를 짜는 것이 아니라, 이미 검증된 **`Dashboard(Admin)`, `Landing Page(Marketing)`, `",
+      "completedAt": "2026-05-31T06:17:41.472Z"
+    },
+    {
+      "id": "20260531061741-kqfm",
+      "title": "**NEXUS-LANDING** 섹션별 컴포넌트(Hero, Pricing, Feature) 개발",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T06:17:41.442Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-16",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-16/_report.md\n- 코다리: 새 웹 사이트 템플릿 구현하기\n\nCEO 종합 요점: 현재 사용자의 요청은 **\"새로운 웹사이트 템플릿 구현\"**에 대한 것으로, 이는 단순한 코드 작성을 넘어 **[Packaged Product]**로서의 가치를 지녀야 합니다.\n\n저는 `Developer`로서, 단순히 HTML/CSS를 짜는 것이 아니라, 이미 검증된 **`Dashboard(Admin)`, `Landing Page(Marketing)`, `",
+      "completedAt": "2026-05-31T06:17:41.483Z"
+    },
+    {
+      "id": "20260531064720-me7w",
+      "title": "필요한 경우 추가 사항 CEO에게 지시하기",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-31T06:47:20.822Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T06-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T06-46/_report.md\n- 영숙: 오늘의 일정과 해야 할 일 목록 작성 및 확인. 필요한 경우 추가 사항 지시합니다.\n- 레오: 이번 주에 업로드할 영상 기획 및 기본 계획 수립\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정과 해야 할 일 목록 작성 및 확인. 필요한 경우 추가 사항 지시합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: <run_command>cd \"/Volumes/tem",
+      "completedAt": "2026-05-31T06:48:57.539Z"
+    },
+    {
+      "id": "20260531103330-vuqn",
+      "title": "**Approve**: 즉시 실행 (Developer 에이전트에게 작업 할당)",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T10:33:30.472Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T10-31",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T10-31/_report.md\n- Researcher: 2023년 5월 31일 기준, 1인 AI 기업의 트렌드 분석과 경쟁사와의 비교를 수행하고, 이를 바탕으로 업계에서 선두주자로 떠오르는 기술이나 \n- 코다리: 분석결과가 반영된 개선 사항을 고려하여, 1인 AI 기업의 웹사이트와 관련 시스템들의 효율성을 높이기 위한 최적화 작업을 수행해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년 5월 31일 기준, 1인 AI 기업의 트렌드 분석과 경쟁사와의 비교를 수행하고, 이를 바탕으로 업계에서 선두주자로 떠오르는 기술이나 전략에 대한 보고서를 작성하세요.\n> 🔧 **도구 실행**: _(",
+      "completedAt": "2026-05-31T10:34:18.657Z"
+    },
+    {
+      "id": "20260531103330-sl9y",
+      "title": "**Modify**: 특정 기술 스택이나 계획 수정 요청",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-05-31T10:33:30.482Z",
+      "status": "done",
+      "sessionDir": "2026-05-31T10-31",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-31T10-31/_report.md\n- Researcher: 2023년 5월 31일 기준, 1인 AI 기업의 트렌드 분석과 경쟁사와의 비교를 수행하고, 이를 바탕으로 업계에서 선두주자로 떠오르는 기술이나 \n- 코다리: 분석결과가 반영된 개선 사항을 고려하여, 1인 AI 기업의 웹사이트와 관련 시스템들의 효율성을 높이기 위한 최적화 작업을 수행해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년 5월 31일 기준, 1인 AI 기업의 트렌드 분석과 경쟁사와의 비교를 수행하고, 이를 바탕으로 업계에서 선두주자로 떠오르는 기술이나 전략에 대한 보고서를 작성하세요.\n> 🔧 **도구 실행**: _(",
+      "completedAt": "2026-05-31T10:34:18.664Z"
+    },
+    {
+      "id": "20260601215827-gzcd",
+      "title": "**[Action 1]** `Trend_Sniper`를 가동하여 6월 1주차 주제에 대한 구체적인 '서브 키워드'와 '경쟁 영상 리스트' 확보.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-01T21:58:27.264Z",
+      "status": "done",
+      "sessionDir": "2026-06-01T21-56",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-01T21-56/_report.md\n- 레오: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n- Designer: 새롭게 기획된 영상 콘텐츠의 썸네일과 브랜딩 비주얼 디자인을 완성한다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 ",
+      "completedAt": "2026-06-01T22:00:28.557Z"
+    },
+    {
+      "id": "20260601215827-gbq6",
+      "title": "**[Action 2]** `Auto_Planner`에게 1주차 영상의 '초안 스크립트' 작성을 지시.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-01T21:58:27.288Z",
+      "status": "done",
+      "sessionDir": "2026-06-01T21-56",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-01T21-56/_report.md\n- 레오: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n- Designer: 새롭게 기획된 영상 콘텐츠의 썸네일과 브랜딩 비주얼 디자인을 완성한다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 ",
+      "completedAt": "2026-06-01T22:00:28.565Z"
+    },
+    {
+      "id": "20260601215827-kosu",
+      "title": "**[Action 3]** 6월 콘텐츠 로드맵을 채널 커뮤니티 탭에 'Building in Public' 형태로 공지하여 기대감 조성.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-01T21:58:27.294Z",
+      "status": "done",
+      "sessionDir": "2026-06-01T21-56",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-01T21-56/_report.md\n- 레오: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n- Designer: 새롭게 기획된 영상 콘텐츠의 썸네일과 브랜딩 비주얼 디자인을 완성한다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 새로운 영상 콘텐츠 기획 및 계획을 수립하여 2026년 6월 내에 공개할 예정이다.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 **수집 데이터**: YouTube 채널 영상 분석 (실제 ",
+      "completedAt": "2026-06-01T22:00:28.568Z"
+    },
+    {
+      "id": "20260602105135-ojj2",
+      "title": "모든 단위 테스트(Unit Test)가 통과할 것.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-02T10:51:35.546Z",
+      "status": "done",
+      "sessionDir": "2026-06-02T10-48",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-02T10-48/_report.md\n- 영숙: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번\n- Designer: 이달의 개인 목표에 기여하기 위해, 브랜드 비주얼 및 사용자 경험에 대한 새로운 아이디어를 개발하고, 이를 활용한 썸네일 및 UI 디자인 프로젝\n- 코다리: 개인 목표 달성을 지원하기 위해, 코드 최적화 및 보안 개선 작업을 수행하고, 새롭게 구상한 프로젝트에 적합한 API 통합 및 자동화 스크립트를\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번 정도 진행할 것으로 예상되는 최적의 일정과 업무 요약을 작성하세요.\n> 🔧 *",
+      "completedAt": "2026-06-02T10:56:05.452Z"
+    },
+    {
+      "id": "20260602105135-df9a",
+      "title": "API 호출 실패 시 재시도 로직이 작동함을 로그로 증명할 것.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-02T10:51:35.574Z",
+      "status": "done",
+      "sessionDir": "2026-06-02T10-48",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-02T10-48/_report.md\n- 영숙: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번\n- Designer: 이달의 개인 목표에 기여하기 위해, 브랜드 비주얼 및 사용자 경험에 대한 새로운 아이디어를 개발하고, 이를 활용한 썸네일 및 UI 디자인 프로젝\n- 코다리: 개인 목표 달성을 지원하기 위해, 코드 최적화 및 보안 개선 작업을 수행하고, 새롭게 구상한 프로젝트에 적합한 API 통합 및 자동화 스크립트를\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번 정도 진행할 것으로 예상되는 최적의 일정과 업무 요약을 작성하세요.\n> 🔧 *",
+      "completedAt": "2026-06-02T10:56:05.455Z"
+    },
+    {
+      "id": "20260602105135-kmkl",
+      "title": "코드 내에 하드코딩된 API Key나 Secret이 존재하지 않을 것.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-02T10:51:35.591Z",
+      "status": "done",
+      "sessionDir": "2026-06-02T10-48",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-02T10-48/_report.md\n- 영숙: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번\n- Designer: 이달의 개인 목표에 기여하기 위해, 브랜드 비주얼 및 사용자 경험에 대한 새로운 아이디어를 개발하고, 이를 활용한 썸네일 및 UI 디자인 프로젝\n- 코다리: 개인 목표 달성을 지원하기 위해, 코드 최적화 및 보안 개선 작업을 수행하고, 새롭게 구상한 프로젝트에 적합한 API 통합 및 자동화 스크립트를\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번 정도 진행할 것으로 예상되는 최적의 일정과 업무 요약을 작성하세요.\n> 🔧 *",
+      "completedAt": "2026-06-02T10:56:05.458Z"
+    },
+    {
+      "id": "20260602105135-kkp0",
+      "title": "새로운 API를 추가하는 데 걸리는 시간이 10분 이내로 문서화될 것.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-02T10:51:35.595Z",
+      "status": "done",
+      "sessionDir": "2026-06-02T10-48",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-02T10-48/_report.md\n- 영숙: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번\n- Designer: 이달의 개인 목표에 기여하기 위해, 브랜드 비주얼 및 사용자 경험에 대한 새로운 아이디어를 개발하고, 이를 활용한 썸네일 및 UI 디자인 프로젝\n- 코다리: 개인 목표 달성을 지원하기 위해, 코드 최적화 및 보안 개선 작업을 수행하고, 새롭게 구상한 프로젝트에 적합한 API 통합 및 자동화 스크립트를\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 일정과 업무를 통해 이 달에 개인 목표달성을 위해 중요시 고려할 만한 주요 이벤트 및 마이크로스크립트를 식별하고, 이를 기반으로 일주일에 한 번 정도 진행할 것으로 예상되는 최적의 일정과 업무 요약을 작성하세요.\n> 🔧 *",
+      "completedAt": "2026-06-02T10:56:05.461Z"
+    },
+    {
+      "id": "20260603074038-h9mz",
+      "title": "<run_command>cd \"/Volumes/temp/AI/company/_company/_agents/business/tools\" && python3 ._paypal_revenue.py</run_command>",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-06-03T07:40:38.238Z",
+      "status": "done",
+      "sessionDir": "2026-06-03T07-37",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-03T07-37/_report.md\n- Researcher: 2023년 하반기에 있었던 주요 이벤트, 소셜 미디어 트렌드, 경쟁사 활동을 분석하여 요약한 보고서를 작성하세요.\n- 현빈: 2023년 하반기의 수익성 및 비용 상황을 종합하여, 2024년도 기업의 전략과 목표를 계획하고 프로젝트로 정리해주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 2023년 하반기에 있었던 주요 이벤트, 소셜 미디어 트렌드, 경쟁사 활동을 분석하여 요약한 보고서를 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신",
+      "completedAt": "2026-06-03T07:41:24.893Z"
+    },
+    {
+      "id": "20260603130902-axkc",
+      "title": "승인 (Proceed with Task 01)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-06-03T13:09:02.314Z",
+      "status": "done",
+      "sessionDir": "2026-06-03T13-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-03T13-07/_report.md\n- Researcher: 최근 트렌드 및 경쟁사의 분석을 수행하고, 데이터를 수집하며 요약하여 보고서를 작성하세요.\n- 현빈: KPI와 관련된 비즈니스 전략과 분석을 수행하며, 개선사항을 제안하고 실행 계획을 세워주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사의 분석을 수행하고, 데이터를 수집하며 요약하여 보고서를 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신:** CEO\n> 📝 ",
+      "completedAt": "2026-06-03T13:11:33.182Z"
+    },
+    {
+      "id": "20260603130902-3nkh",
+      "title": "반려 및 재검토 (Request Revision)",
+      "description": "자동 등록 (Researcher 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "researcher"
+      ],
+      "createdAt": "2026-06-03T13:09:02.325Z",
+      "status": "done",
+      "sessionDir": "2026-06-03T13-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-03T13-07/_report.md\n- Researcher: 최근 트렌드 및 경쟁사의 분석을 수행하고, 데이터를 수집하며 요약하여 보고서를 작성하세요.\n- 현빈: KPI와 관련된 비즈니스 전략과 분석을 수행하며, 개선사항을 제안하고 실행 계획을 세워주세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🔍 Researcher _(Trend & Data Researcher)_\n> 📋 **지시**: 최근 트렌드 및 경쟁사의 분석을 수행하고, 데이터를 수집하며 요약하여 보고서를 작성하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **수신:** CEO\n> 📝 ",
+      "completedAt": "2026-06-03T13:11:33.189Z"
+    },
+    {
+      "id": "20260603193926-amqr",
+      "title": "**Step 1: 트렌드 스캐닝 진행 중... (YouTube 에이전트 대기 중)**",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-03T19:39:26.246Z",
+      "status": "done",
+      "sessionDir": "2026-06-03T19-37",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-03T19-37/_report.md\n- 영숙: 오늘의 일정 및 중요한 미팅 스케줄을 확인하고 업데이트합니다. 중요 사항이 있다면 각 에이전트에게 알림으로 전달합니다.\n- 레오: 최신 영상 콘텐츠와 트렌드에 대한 연구를 진행하고, 새로운 영상 아이디어 및 기획을 작성합니다.\n- Designer: 새로운 브랜드 비주얼과 디자인 요소에 대해 고민하고, 일관성 있는 스타일을 유지하기 위해 기존 디자인을 검토합니다.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 오늘의 일정 및 중요한 미팅 스케줄을 확인하고 업데이트합니다. 중요 사항이 있다면 각 에이전트에게 알림으로 전달합니다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: <run_comm",
+      "completedAt": "2026-06-03T19:41:13.717Z"
+    }
+  ]
+}
